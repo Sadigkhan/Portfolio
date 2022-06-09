@@ -1,0 +1,587 @@
+// ---------------------------------- Header - Start ------------------------------- //
+
+#Header{
+    background: #171C26;
+    padding: 10px 0;
+    .header-social{
+        i{
+            cursor: pointer;
+            &:hover{
+                color: #FFB400;
+            }
+        }
+    }
+    i{
+        font-size: 14px;
+        color: #b8b7b7;
+        padding: 0px 5px;
+        
+    }
+    a{
+        color: #b8b7b7;
+    }
+}
+
+
+// ---------------------------------- Header - End ------------------------------- //
+
+
+
+#Menu{
+    background: #171C26;
+    img{
+        width: 80%;
+    }
+    li{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        &:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    i{
+        color: #fff;
+        padding: 19px 16px;
+    }
+    .li::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: #EEEEEE;
+        transform-origin: bottom right;
+        transition: transform .3s ease-in-out;
+    }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        &:hover .dropdown-content{
+            display: block;
+        }
+        &:hover{
+            .dropbtn{
+                background: #FFB400;
+            }
+        }
+        .dropbtn {
+            background: transparent;
+            color: white;
+            padding: 16px;
+            font-size: 12px;
+            border: none;
+            font-weight: 600;
+        }
+        .dropdown-content {
+            display: none;
+            top: 95%;
+            position: absolute;
+            background-color: #000;
+            opacity: .7;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a{
+                color: #fff;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+                &:hover{
+                    background-color: #FFB400;
+                }
+              }
+            }
+       }
+       .search-button{
+           .search-input{
+            input{
+                padding: 10px 25px 8.5px 6px;
+                visibility: hidden;
+               }
+           }
+           .search-icon{
+            i{
+                background: #EEEEEE;
+                cursor: pointer;
+                border-radius: 50px;
+                padding: 15px;
+                &:hover {
+                 background: #FFB400;
+                 padding: 15px;
+                 transition: background .3s ease-in-out;
+                 border-radius: 0;
+                }
+            
+            }
+           }
+           &:hover .search-input input{
+            visibility: visible;
+        }
+       }
+}
+
+
+
+#Slider{
+    background: url(http://storage.googleapis.com/themevessel-products/auto-car/img/banner-slider-1.jpg);
+    padding: 10rem 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    .slider-contain{
+        .button-slider{
+            .btn1{
+                color: #fff;
+                padding: 10px 21px;
+                font-weight: bold;
+            }
+            .btn2{
+                font-weight: bold;
+                background: transparent;
+                border: 2px solid #FFB400;
+                color: #FFB400;
+                &:hover{
+                    color: #Fff;
+                    background: #FFB400;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+        .slick-prev{
+            position: absolute;
+            left: 3rem;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .slick-prev:before{
+            content: '→';
+            background: #FFB400;
+            border-radius: 50px;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+        }
+        .slick-next{
+            position: absolute;
+            right: 3rem;
+            z-index: 1;
+        
+        }
+        .slick-next:before{
+            content: '→';
+            background: #FFB400;
+            border-radius: 50px;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+        }
+        .slider-text{
+            h1{
+                color: #fff;
+                font-weight: bold;
+            }
+            p{
+                color: #b8b7b7;
+            }
+        }
+    }
+}
+
+#Featured{
+    margin: 5rem 0;
+    .featured-text{
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .featured-car{
+        .car-img{
+            position: relative;
+            &:hover .overlay{
+                visibility: visible;
+            }
+            .overlay{
+                position: absolute;
+                background: #000;
+                visibility: hidden;
+                opacity: 0.7;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 5rem 0;
+                p{
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .overlay-icon{
+                    i{
+                        background: #FFB400;
+                        color: #fff;
+                        border-radius: 50px;
+                        padding: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .car-name{
+            h5{
+                font-size: 17px;
+                color: #FFB400;
+                cursor: pointer;
+                &:hover{
+                    color: #171C26;
+                }
+            }
+            p{
+                font-size: 12px;
+            }
+            i{
+                color: #FFB400;
+            }
+            span{
+                color: #171C26;
+                padding-left: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#Best{
+    margin: 5rem 0;
+    .best-text{
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .best-box{
+        i{
+            background: #FFB400;
+            border-radius: 50px;
+            padding: 15px 18px;
+            font-size: 17px;
+            color: #fff;
+        }
+        h6{
+            color: #FFB400;
+            font-weight: bold;
+        }
+        p{
+            font-size: 12px;
+            color: #171C26;
+        }
+    }
+    .best-btn{
+        .btn3{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+
+#Offers{
+    .offers-text{
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+        .offers-photo{
+            .offers-photo-top{
+                .photo1{
+                    width: 100%;
+                }
+            }
+            .offers-photo-bottom{
+                .photo2{
+                    width: 50%;
+                    padding-left: 15px
+                }
+                .photo3{
+                    width: 50%;
+                    padding-right: 15px;
+                }
+            }
+            .photo4{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+}
+
+#Blog{
+    margin: 5rem 0;
+    .blog-text{
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .blog-box{
+        h5{
+            font-size: 17px;
+        }
+        span{
+            color: #FFB400;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        p{
+            color: #171C26;
+        }
+        a{
+            border: 1px solid #FFB400;
+            color: #FFB400;
+            background: transparent;
+            padding: 9px 32px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                background: #FFB400;
+                color: #fff;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+
+
+#Testimonial{
+    background: url(http://storage.googleapis.com/themevessel-products/auto-car/img/testimonials-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .overlay{
+        background: #000;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .test-text{
+        .slick-prev{
+            position: absolute;
+            left: 3rem;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .slick-prev:before{
+            content: '→';
+            background: #171C26;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .slick-next{
+            position: absolute;
+            right: 3rem;
+            z-index: 1;
+        
+        }
+        .slick-next:before{
+            content: '→';
+            background: #171C26;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .test-slider{
+            h1{
+                color: #c7c1c1;
+                font-size: 34px;
+            }
+            p{
+                color:  #c7c1c1;           
+            }
+            img{
+                width: 8%;
+                border-radius: 60px;
+                display: inline-block;
+            }
+            h5{
+                color: #c7c1c1;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+
+#Agent{
+    margin: 5rem 0;
+    .agent-text{
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    .agent-contain{
+        .agent-box{
+            box-shadow: 4px 11px 7px #808080;
+        }
+        .social{
+            display: inline-block;
+            i{
+                padding-right: 8px;
+                color: #808080;
+                &:hover{
+                    color: #FFB400;
+                    cursor: pointer;
+                }
+            }
+        }
+        h6{
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                color: #FFB400;
+            }
+        }
+    }
+    
+}
+
+
+// #Brands{
+//     background: url(http://storage.googleapis.com/themevessel-products/auto-car/img/partner-bg.jpg);
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     .brand-items{
+//         .brand-logos{
+//             img{
+//                 filter: grayscale(1);
+//                 cursor: pointer;
+//                 &:hover{
+//                     filter: none;
+//                 }
+//             }
+//         }
+//         .slick-prev{
+//             position: absolute;
+//             left: -3rem;
+//             z-index: 1;
+//             transform: rotate(180deg);
+//         }
+//         .slick-prev:before{
+//             content: '→';
+//             background: #171C26;
+//             padding: 10px 10px;
+//             font-family: 'slick';
+//             font-size: 20px;
+//             line-height: 1;
+//             color: white;
+//             border-radius: 50px;
+//         }
+//         .slick-next{
+//             position: absolute;
+//             right: -3rem;
+//             z-index: 1;
+        
+//         }
+//         .slick-next:before{
+//             content: '→';
+//             background: #171C26;
+//             padding: 10px 10px;
+//             font-family: 'slick';
+//             font-size: 20px;
+//             line-height: 1;
+//             color: white;
+//             border-radius: 50px;
+//         }
+//     }
+// }
+
+#Footer{
+    background: #111111;
+    h2{
+        color: #7C7e83;
+        font-size: 20px;
+    }
+    p{
+        color: #7C7e83;
+    }
+    hr{
+        color: #7C7e83;
+    }
+    i{
+        color: #7C7e83;
+        padding: 1rem 0;
+    }
+    .footer-top{
+        background: rgba(255, 255, 255, 0.03);
+        .footer-social{
+            i{
+            font-size: 25px;
+            color: #fff;
+         }
+         i:before:nth-child(1) {
+             background: #4867AA;
+         }
+         i:nth-child(2) {
+            background: #33CCFF;
+        }
+        i:nth-child(3) {
+            background: #DB4437;
+        }
+        i:nth-child(4) {
+            background: #0177B5;
+        }
+        i:nth-child(5) {
+            background: #D4061D;
+        }
+
+      }
+    }
+    .tags{
+        a{
+            color: #7C7e83;
+            border: .5px solid #7C7e83;
+            font-size: 13px;
+        }
+    }
+    .links{
+        p{
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    .footer-bottom{
+        .recent-right{
+            padding-left:2rem; 
+            h3{
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}

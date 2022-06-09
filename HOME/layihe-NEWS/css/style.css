@@ -1,0 +1,454 @@
+#Header {
+  background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/10/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 12rem;
+  position: relative;
+}
+#Header .overlay {
+  background: #000;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#Header .user-Header {
+  padding: 6px 13px 13px 13px;
+  cursor: pointer;
+}
+#Header i {
+  font-size: 30px;
+}
+#Header .li {
+  font-family: "Rubik", sans-serif;
+  padding: 21px 15px;
+  font-weight: bold;
+}
+#Header .li:hover {
+  background: #EA723D;
+}
+#Header .dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 19px 8px 0px 8px;
+  font-weight: bold;
+}
+#Header .dropdown a {
+  font-size: 17px;
+}
+#Header .dropdown .line-drop {
+  border-top: 3px solid #EA723D;
+}
+#Header .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 3px 1px 6px 0px #1ea69a;
+  z-index: 1;
+}
+#Header .dropdown .dropdown-content a {
+  color: #b6b6b6;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+#Header .dropdown .dropdown-content a:hover {
+  background: #fafafa;
+  color: #868686;
+}
+#Header .dropdown:hover .dropdown-content {
+  display: block;
+}
+#Header .li:nth-child(5) {
+  background: #EA723D;
+}
+#Header .login-form {
+  background: #fcfcfc;
+  padding: 20px 16px;
+}
+#Header .login-form h3 {
+  font-size: 20px;
+  color: #868686;
+}
+#Header .login-form p {
+  font-weight: bold;
+  cursor: pointer;
+}
+#Header .login-form p:hover {
+  text-decoration: underline;
+  color: #EA723D;
+}
+#Header .login-form input {
+  margin: 10px 0;
+}
+#Header .login-form .Btn-login {
+  background: #1ea69a;
+  color: #fff;
+  padding: 3px 4.26rem;
+  border: none;
+}
+#Header .login-form .Btn-login:hover {
+  background: #169288;
+}
+#Header .btnHeader {
+  padding-top: 15px;
+}
+#Header .btnHeader input {
+  background: #1ea69a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+#Header .btnHeader input:hover {
+  background: #169288;
+  transition: background .3s ease-in-out;
+}
+
+#News {
+  background: #e5e5e5;
+}
+#News .news-box {
+  position: relative;
+  top: -48px;
+}
+#News .news-box .nb {
+  border: .3px solid #bebebe;
+  padding: 15px 10px;
+  background: #fff;
+}
+#News .news-box .nb .nb-top p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#News .news-box .nb .nb-bottom button {
+  background: transparent;
+  color: #868686;
+  border: #fff;
+  padding: 0px;
+}
+#News .news-box .nb .nb-bottom a {
+  background: #1ea69a;
+  padding: 4px 5px;
+}
+#News .news-box .nb .nb-bottom a:hover {
+  background: #169288;
+  color: #fff;
+}
+#News .news-box .nb .nb-bottom .dp-menu {
+  padding: 0px;
+}
+#News .news-box .nb .nb-bottom .dp-menu input {
+  width: 16.8rem;
+  background: #169288;
+  border: .5px solid #fff;
+}
+#News .news-box .nb .nb-bottom .dp-menu a {
+  width: 16.8rem;
+  padding: 12px;
+}
+#News .news-box .nb .btnZoom {
+  background: #169288;
+  color: #fff;
+}
+
+#Gallery {
+  background: #e5e5e5;
+  padding-top: 3rem;
+}
+#Gallery .left-content {
+  position: relative;
+  padding-bottom: 5rem;
+}
+#Gallery .left-content .left-content-slider .left-content-img .slick-next {
+  margin-right: 37px;
+  background: orange;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  padding-bottom: 4px;
+}
+#Gallery .left-content .gallery-box {
+  background: #1ea69a;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  top: -50px;
+  padding: 10px;
+}
+#Gallery .left-content .gallery-box h3 {
+  color: #fff;
+  font-size: 20px;
+}
+#Gallery .left-content .gallery-text {
+  padding-top: 5rem;
+}
+#Gallery .left-content .gallery-text a {
+  background: #1ea69a;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+#Gallery .left-content .gallery-text a:hover {
+  background: #169288;
+}
+#Gallery .left-content .gallery-text p {
+  color: #868686;
+}
+#Gallery .right-content .agents p {
+  font-size: 24px;
+  font-weight: 400;
+}
+#Gallery .right-content .agents .agent-box {
+  background: #fff;
+  padding: 15px 0px 8px 0px;
+  box-shadow: 0 1px 1px rgba(128, 128, 128, 0.2);
+}
+#Gallery .right-content .agents .agent-box .agent-img img {
+  border-radius: 100px;
+  cursor: pointer;
+}
+#Gallery .right-content .agents .agent-box .agent-img img:hover {
+  opacity: 0.8;
+  transition: opacity .3s ease-in-out;
+}
+#Gallery .right-content .agents .agent-box .agent-about h4 {
+  cursor: pointer;
+}
+#Gallery .right-content .agents .agent-box .agent-about h4:hover {
+  color: #EA723D;
+  transition: color .3s ease-in-out;
+}
+#Gallery .right-content .agents .agent-box .agent-about a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+#Gallery .right-content .agents .agent-box .agent-about a:hover {
+  color: #EA723D;
+  transition: color .3s ease-in-out;
+}
+#Gallery .right-content .agents .agent-box .agent-about p {
+  font-size: 14px;
+}
+#Gallery .right-content .agent-btn {
+  background: #1ea69a !important;
+  color: #fff;
+}
+#Gallery .right-content .agent-btn:hover {
+  background: #169288;
+}
+#Gallery .right-content .Feature {
+  padding: 0px;
+  padding-top: 3rem;
+}
+#Gallery .right-content .Feature .feature-p {
+  font-size: 24px;
+  font-weight: 400;
+}
+#Gallery .right-content .Feature .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+}
+#Gallery .right-content .Feature .featured .featured-img {
+  position: relative;
+}
+#Gallery .right-content .Feature .featured .featured-img:hover .featured-overlay {
+  visibility: visible;
+}
+#Gallery .right-content .Feature .featured .featured-img:hover .featured-overlay a {
+  top: 50%;
+  transition: all .5s ease-in-out;
+}
+#Gallery .right-content .Feature .featured .featured-img .featured-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1ea69a;
+  visibility: hidden;
+  opacity: 0.7;
+  z-index: 1;
+  text-align: center;
+}
+#Gallery .right-content .Feature .featured .featured-img .featured-overlay a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+#Gallery .right-content .Feature .featured .featured-img .featured-overlay a:hover {
+  background: #fff;
+  color: #1ea69a;
+  transition: all .3s ease-in-out;
+}
+#Gallery .right-content .Feature .featured .featured-text {
+  padding: 10px;
+}
+#Gallery .right-content .Feature .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Gallery .right-content .Feature .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Gallery .right-content .Feature .featured .featured-text p {
+  color: #808080;
+}
+#Gallery .right-content .Feature .featured .featured-icon {
+  padding: 10px;
+}
+#Gallery .right-content .Feature .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Gallery .right-content .Feature .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Gallery .right-content .Feature .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Gallery .right-content .Feature .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Gallery .right-content .Feature .featured .featured-sale {
+  line-height: 0px;
+  padding: 10px;
+}
+#Gallery .right-content .Feature .featured .featured-sale p {
+  font-weight: bold;
+}
+#Gallery .right-content .Feature .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+#Gallery .right-content .property-types {
+  padding: 0px;
+  padding-top: 2rem;
+}
+#Gallery .right-content .property-types p {
+  font-size: 24px;
+  font-weight: 400;
+}
+#Gallery .right-content .property-types ul li {
+  color: #808080;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+#Gallery .right-content .property-types ul li:hover {
+  color: #EA723D;
+  transform: translateX(10px);
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+#Gallery .right-content .categories {
+  padding: 0px;
+}
+#Gallery .right-content .categories p {
+  font-size: 24px;
+  font-weight: 400;
+}
+#Gallery .right-content .categories ul li {
+  color: #808080;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+#Gallery .right-content .categories ul li:hover {
+  color: #EA723D;
+  transform: translateX(10px);
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+
+#Footer {
+  margin-top: 10rem;
+  background: #303030;
+  color: #fff;
+  padding: 3rem 0;
+}
+#Footer .footer-top .ft-left {
+  padding-left: 2.9rem;
+}
+#Footer .footer-top .ft-left p {
+  color: #808080;
+  padding: 10px;
+}
+#Footer .footer-top .ft-right {
+  text-align: end;
+}
+#Footer .footer-top .ft-right i {
+  font-size: 20px;
+  color: #808080;
+  padding-right: 10px;
+  cursor: pointer;
+}
+#Footer .footer-top .ft-right i:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+#Footer .footer-middle {
+  padding: 4rem 0px;
+}
+#Footer .footer-middle .fm-left li {
+  color: #808080;
+  cursor: pointer;
+}
+#Footer .footer-middle .fm-left li:hover {
+  color: #fff;
+  font-weight: bold;
+  transition: color .3s ease-in-out;
+}
+#Footer .footer-middle .fm-center {
+  padding-bottom: 2rem;
+}
+#Footer .footer-middle .fm-center li {
+  padding: 15px 7px;
+  color: #808080;
+}
+#Footer .footer-middle .fm-right .footer-btn {
+  padding: 10px 10.5rem 10px 5px;
+}
+#Footer .footer-middle .fm-right .footer-btn1 {
+  background: #EA723D;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+#Footer .footer-middle .fm-right .footer-btn1:hover {
+  background: #df5f29;
+  transition: background .3s ease-in-out;
+}
+#Footer .footer-bottom .fb-left {
+  color: #808080;
+}
+#Footer .footer-bottom .fb-right {
+  text-align: end;
+}
+#Footer .footer-bottom .fb-right p {
+  color: #808080;
+}
+#Footer .footer-bottom .fb-right span {
+  cursor: pointer;
+}
+#Footer .footer-bottom .fb-right span:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */

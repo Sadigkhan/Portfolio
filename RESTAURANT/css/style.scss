@@ -1,0 +1,821 @@
+// ------------------------------------------ Header - Start ------------------------------------- //
+body{
+    background: url(https://colorlib.com/preview/theme/pizza/images/bg_4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#Header{
+    background: #343a40!important;
+    padding: 1rem 0;
+    i{
+        color: #fac564;
+        position: relative;
+        font-size: 30px;
+        
+    }
+    span{
+        color: #000;
+        font-size: 25px;
+        font-family: "josefin sans",Arial, sans-serif;
+        color: #fff;
+        padding-left: 10px;
+    }
+    i::after{
+        content: 'Delicious';
+        position: absolute;
+        top: 14px;
+        color: #fac564;
+        font-size: 12px;
+        left: 14px;
+        top: 29px;
+        letter-spacing: 6px;
+    
+
+    }
+    .li{
+        padding: 0 14px;
+        a{
+            color: rgba(255,255,255,.7);
+            &:hover{
+                color: #fac564;
+            }
+        }
+    }
+}
+
+
+// ------------------------------------------ Header - End ------------------------------------- //
+
+
+
+
+
+// ------------------------------------------ Slider - Start ------------------------------------- //
+
+#Slider{
+    background: url(https://colorlib.com/preview/theme/pizza/images/bg_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .slider-all{
+        .slick-prev{
+            position: absolute;
+            left: -3rem;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .slick-prev:before{
+            content: '→';
+            background: #FFB400;
+            border-style: outset;
+            padding: 0 1rem;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+        }
+        .slick-next{
+            position: absolute;
+            right: 2rem;
+            z-index: 1;
+        
+        }
+        .slick-next:before{
+            content: '→';
+            background: #FFB400;
+            border-style: outset;
+            padding: 0 1rem;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+        }
+        .slide1{
+            .slide1-content{
+                .slider-text{
+                    padding: 8rem 0;
+                h6{
+                   font-family: 'Indie Flower', cursive;
+                   color: #fac564;
+                   font-size: 20px;
+                }
+                h1{
+                    color: #Fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+                .slider-btn{
+                    display: inline-block;
+                    .btn1{
+                        background: #fac564;
+                        color: #000;
+                        padding: 10px 25px;
+                        text-decoration: none;
+                        &:hover{
+                            background: transparent;
+                            color: #fac564;
+                            border: 1px solid #fac564;
+                            transition: background .3s ease-in-out;
+                        }
+                    }
+                    .btn2{
+                        color: #fff;
+                        border: 1px solid #fff;
+                        background: transparent;
+                        padding: 10px 25px;
+                        text-decoration: none;
+                        &:hover{
+                            background: #fac564;
+                            color: #000;
+                            border: none;
+                            transition: background .3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ------------------------------------------ Slider - End ------------------------------------- //
+
+
+
+// ------------------------------------------ Contact - Start ------------------------------------- //
+
+#Contact{
+    background-attachment: fixed;
+    .contact-all{
+        .Contact-1{
+            background: #000;
+        .contact-content{
+            .contact-box{
+                padding: 1rem;
+                i{
+                    color: #FFB400;
+                    font-size: 30px;
+                }
+                span{
+                    color: #fff;
+                    padding-left: 10px;
+                    font-size: 17px;
+                }
+                p{
+                    color: #808080;
+                }
+            }
+        }
+    }
+    .Contact-2{
+        background: #FFB400;
+        .contact-social{
+            padding: 2rem;
+            i{
+                color: #fff;
+                font-size: 25px;
+                padding-left: 2rem;
+            }
+        }
+    }
+  }
+}
+
+
+// ------------------------------------------ Contact - End ------------------------------------- //
+
+
+// --------------------------------------- Cafe- Start ------------------ //
+
+#Cafe{
+    background-attachment: fixed;
+    .cafe-all{
+        .cafe-left{
+            img{
+                padding: 5rem 0;
+            }
+        }
+        .cafe-right{
+            padding: 5rem 1rem;
+            h2{
+                color: #fff;
+            }
+            span{
+                padding: 0 10px;
+            }
+            i{
+                color:#FFB400;
+            }
+            p{
+                color: #808080;
+                padding-top: 1rem;
+                line-height: 2rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+// --------------------------------------- Cafe- End ------------------------------------ //
+
+
+
+// ------------------------------------- Services - Start ------------------------------ //
+
+#Services{
+    background: url(https://colorlib.com/preview/theme/pizza/images/food.png);
+    color: #5c3d03;
+    padding: 3rem 0;
+    background-attachment: fixed;
+    .service-text{
+        h2{
+            color: #000;
+        }
+    }
+    .service-box{
+        i{
+            border: 1px solid #5c3d03;
+            font-size: 50px;
+            padding: 17px;
+            &:hover{
+                color: #fff;
+                background: #FFB400;
+            border: 1px solid #FFB400;
+
+            }
+            &:hover border{
+                transform: rotate(45deg);
+            }
+        
+        }
+        h3{
+            padding: 1rem 0;
+            font-size: 22px;
+        }
+    }
+
+}
+
+
+// ------------------------------------- Services - End ------------------------------ //
+
+
+
+
+
+// ------------------------------------- Meals - Start ------------------------------ //
+#Meals{
+    padding: 3rem 0;
+    background-attachment: fixed;
+    .meals-text{
+        padding-bottom: 2rem;
+        h2{
+            color: #fff;
+        }
+        p{
+            color: #808080;
+        }
+    }
+    .meals-left1{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-left2{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-left3{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-left4{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-left5{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-left6{
+        background: url(https://colorlib.com/preview/theme/pizza/images/pizza-6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .meals-box{
+        .meals-right{
+            padding: 14px;
+            .overlay-meals{
+                background: #000;
+                opacity: 0.3;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            h3{
+                color: #fff;
+                font-size: 20px;
+            }
+            p{
+                color: #808080;
+            }
+            .meals-price{
+                padding-left: 6px;
+                position: relative;
+                justify-content: space-around;
+                p{
+                    color: #FFB400;
+                    padding: 0 10px;
+                }
+                a{
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 6px 25px 0px 25px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fff;
+                        background: #fac564;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ------------------------------------- Meals - End ------------------------------ //
+
+
+
+
+// ------------------------------------- Pricing - Start ------------------------------ //
+
+#Pricing{
+    background-attachment: fixed;
+    .pricing-text{
+        h2{
+            color: #fff;
+        }
+        p{
+            color: #808080;
+        }
+    }
+    .pricing-list{
+        .list-price-box{
+            h5{
+                color: #fff;
+            }
+            span{
+                color: #FFB400;
+                padding: 0 10px;
+            }
+            p{
+                color: #fac564;
+            }
+        }
+        .list1{
+            p{
+                color: #808080;
+            }
+            .list-img1{
+                .ssss{
+                    background: url(https://colorlib.com/preview/theme/pizza/images/pizza-1.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    cursor: pointer;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50px;
+                }
+                
+            }
+        }
+        .list2{
+            p{
+                color: #808080;
+            }
+            .list-img2{
+                .ssss{
+                    background: url(https://colorlib.com/preview/theme/pizza/images/pizza-2.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    cursor: pointer;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50px;
+                }
+              
+            }
+        }
+        .list3{
+            p{
+                color: #808080;
+            }
+            .list-img3{
+                .ssss{
+                    background: url(https://colorlib.com/preview/theme/pizza/images/pizza-3.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    cursor: pointer;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50px;
+                }
+            }
+        }
+        .list4{
+            p{
+                color: #808080;
+            }
+            .list-img4{
+                .ssss{
+                    background: url(https://colorlib.com/preview/theme/pizza/images/pizza-4.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    cursor: pointer;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50px;
+                }
+               
+            }
+        }
+        
+    }
+}
+
+// ------------------------------------- Pricing - End ------------------------------ //
+
+
+
+// ------------------------------------- Friends - Start ------------------------------ //
+
+#Friends{
+    margin-top: 5rem;
+    background-attachment: fixed;
+    .friends-all{
+        .friend1{
+            background: url(https://colorlib.com/preview/theme/pizza/images/gallery-1.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 7rem 0;
+            &:hover{
+                .friend-icon{
+                    i{
+                    opacity: 1;
+                    }
+                    i::after{
+                        opacity: 1;
+                        transform: rotate(60deg);
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+
+            }
+            .friend-icon{
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                i::after{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    content: '';
+                    background: #FFB400;
+                    opacity: 0;
+                    left: 42.8%;
+                    top: 38%;
+                }
+            }
+        }
+        .friend2{
+            background: url(https://colorlib.com/preview/theme/pizza/images/gallery-2.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 7rem 0;
+             &:hover{
+                .friend-icon{
+                    i{
+                    opacity: 1;
+                    }
+                    i::after{
+                        opacity: 1;
+                        transform: rotate(60deg);
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+
+            }
+            .friend-icon{
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                i::after{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    content: '';
+                    background: #FFB400;
+                    opacity: 0;
+                    left: 42.8%;
+                    top: 38%;
+                }
+            }
+        }
+        .friend3{
+            background: url(https://colorlib.com/preview/theme/pizza/images/gallery-3.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 7rem 0;
+             &:hover{
+                .friend-icon{
+                    i{
+                    opacity: 1;
+                    }
+                    i::after{
+                        opacity: 1;
+                        transform: rotate(60deg);
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+
+            }
+            .friend-icon{
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                i::after{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    content: '';
+                    background: #FFB400;
+                    opacity: 0;
+                    left: 42.8%;
+                    top: 38%;
+                }
+            }
+        }
+        .friend4{
+            background: url(https://colorlib.com/preview/theme/pizza/images/gallery-4.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 7rem 0;
+             &:hover{
+                .friend-icon{
+                    i{
+                    opacity: 1;
+                    }
+                    i::after{
+                        opacity: 1;
+                        transform: rotate(60deg);
+                        transition: transform .3s ease-in-out;
+                    }
+                }
+
+            }
+            .friend-icon{
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                i::after{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    content: '';
+                    background: #FFB400;
+                    opacity: 0;
+                    left: 42.8%;
+                    top: 38%;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// ------------------------------------- Friends - End ------------------------------ //
+
+
+
+
+
+// ------------------------------------- Counter - Start ------------------------------ //
+
+#Counter{
+    background: url(https://colorlib.com/preview/theme/pizza/images/bg_2.jpg);
+    background-position: 50% 15rem;
+    position: relative;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #000;
+        opacity: 0.7;
+
+    }
+    .counter-all{
+        i{
+            color: #fac564;
+            // border: 1px solid #fac564;
+            font-size: 45px;
+            padding: 10px;
+            &:hover{
+                color: #fff;
+                background: #fac564;
+                border: none;
+            }
+        }
+        h5{
+            color: #fac564;
+            font-size: 30px;
+        }
+        p{
+            color: #808080;
+        }
+    }
+}
+
+
+// ------------------------------------- Counter - End ------------------------------ //
+
+
+
+
+// ------------------------------------- Map - Start ------------------------------ //
+
+#Map{
+    .map-all{
+        .map-contact{
+            background: #000;
+            padding: 1rem;
+            h2{
+                color: #fff;
+            }
+            a{
+                color: #fff;
+                background: #fac564;
+                padding: 10px 32px;
+                font-size: 20px;
+                cursor: pointer;
+                letter-spacing: 3px;
+                text-decoration: none;
+                &:hover{
+                    border: 1px solid #fac564;
+                    background: transparent;
+                    color: #fac564;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        input{
+            background: transparent;
+            border-bottom: 1px solid #808080;
+            margin-bottom: 61px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        textarea{
+            background: transparent;
+            border-bottom: 1px solid #808080;
+            margin-bottom: 61px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+    }
+}
+
+// ------------------------------------- Map - End ------------------------------ //
+
+
+
+// ------------------------------------- Footer - Start ------------------------------ //
+
+#Footer{
+    padding: 5rem 0;
+    .footer-all{
+        .recent{
+            .blog-date{
+                i{
+                    color: #fff;
+                    padding-left:13px;
+                    font-size: 11px; 
+                }
+                span{
+                    color: #808080;
+                    padding-left: 5px;
+                    font-size: 11px; 
+
+                }
+            }
+        .recent-img1{
+            background: url(https://colorlib.com/preview/theme/pizza/images/image_1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90px;
+        }
+        .recent-img2{
+            background: url(https://colorlib.com/preview/theme/pizza/images/image_2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90px;
+        }
+        p{
+            cursor: pointer;
+            &:hover{
+                color: #FFB400;
+            }
+        }
+    }
+        h3{
+            color: #fff;
+            font-size: 20px;
+        }
+        p{
+            color: #808080;
+        }
+        .footer-icon{
+            margin: 2rem 0;
+            i{
+                color: #fff;
+                font-size: 30px;
+                padding: 15px;
+                cursor: pointer;
+                border-radius: 50px;
+                background: #343a40;
+                margin-right: 1rem;
+                &:hover{
+                    box-shadow: 4px 11px 18px 0px #FFB400;
+                    color: #808080;
+                }
+            }
+            i:nth-child(2){
+                padding: 15px 20px;
+            }
+        }
+        i{
+                font-size: 14px;
+                color: #Fff;
+                padding: 1rem 0;
+            span{
+                color: #808080;
+                padding-left: 10px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+// ------------------------------------- Footer - End ------------------------------ //

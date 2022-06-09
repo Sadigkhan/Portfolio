@@ -1,0 +1,646 @@
+@charset "UTF-8";
+body {
+  background: url(https://colorlib.com/preview/theme/pizza/images/bg_4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Header {
+  background: #343a40 !important;
+  padding: 1rem 0;
+}
+#Header i {
+  color: #fac564;
+  position: relative;
+  font-size: 30px;
+}
+#Header span {
+  color: #000;
+  font-size: 25px;
+  font-family: "josefin sans",Arial, sans-serif;
+  color: #fff;
+  padding-left: 10px;
+}
+#Header i::after {
+  content: 'Delicious';
+  position: absolute;
+  top: 14px;
+  color: #fac564;
+  font-size: 12px;
+  left: 14px;
+  top: 29px;
+  letter-spacing: 6px;
+}
+#Header .li {
+  padding: 0 14px;
+}
+#Header .li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#Header .li a:hover {
+  color: #fac564;
+}
+
+#Slider {
+  background: url(https://colorlib.com/preview/theme/pizza/images/bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Slider .slider-all .slick-prev {
+  position: absolute;
+  left: -3rem;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+#Slider .slider-all .slick-prev:before {
+  content: '→';
+  background: #FFB400;
+  border-style: outset;
+  padding: 0 1rem;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Slider .slider-all .slick-next {
+  position: absolute;
+  right: 2rem;
+  z-index: 1;
+}
+#Slider .slider-all .slick-next:before {
+  content: '→';
+  background: #FFB400;
+  border-style: outset;
+  padding: 0 1rem;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-text {
+  padding: 8rem 0;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-text h6 {
+  font-family: 'Indie Flower', cursive;
+  color: #fac564;
+  font-size: 20px;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-text h1 {
+  color: #Fff;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-text p {
+  color: #fff;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-btn {
+  display: inline-block;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-btn .btn1 {
+  background: #fac564;
+  color: #000;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-btn .btn1:hover {
+  background: transparent;
+  color: #fac564;
+  border: 1px solid #fac564;
+  transition: background .3s ease-in-out;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-btn .btn2 {
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+#Slider .slider-all .slide1 .slide1-content .slider-btn .btn2:hover {
+  background: #fac564;
+  color: #000;
+  border: none;
+  transition: background .3s ease-in-out;
+}
+
+#Contact {
+  background-attachment: fixed;
+}
+#Contact .contact-all .Contact-1 {
+  background: #000;
+}
+#Contact .contact-all .Contact-1 .contact-content .contact-box {
+  padding: 1rem;
+}
+#Contact .contact-all .Contact-1 .contact-content .contact-box i {
+  color: #FFB400;
+  font-size: 30px;
+}
+#Contact .contact-all .Contact-1 .contact-content .contact-box span {
+  color: #fff;
+  padding-left: 10px;
+  font-size: 17px;
+}
+#Contact .contact-all .Contact-1 .contact-content .contact-box p {
+  color: #808080;
+}
+#Contact .contact-all .Contact-2 {
+  background: #FFB400;
+}
+#Contact .contact-all .Contact-2 .contact-social {
+  padding: 2rem;
+}
+#Contact .contact-all .Contact-2 .contact-social i {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 2rem;
+}
+
+#Cafe {
+  background-attachment: fixed;
+}
+#Cafe .cafe-all .cafe-left img {
+  padding: 5rem 0;
+}
+#Cafe .cafe-all .cafe-right {
+  padding: 5rem 1rem;
+}
+#Cafe .cafe-all .cafe-right h2 {
+  color: #fff;
+}
+#Cafe .cafe-all .cafe-right span {
+  padding: 0 10px;
+}
+#Cafe .cafe-all .cafe-right i {
+  color: #FFB400;
+}
+#Cafe .cafe-all .cafe-right p {
+  color: #808080;
+  padding-top: 1rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
+#Services {
+  background: url(https://colorlib.com/preview/theme/pizza/images/food.png);
+  color: #5c3d03;
+  padding: 3rem 0;
+  background-attachment: fixed;
+}
+#Services .service-text h2 {
+  color: #000;
+}
+#Services .service-box i {
+  border: 1px solid #5c3d03;
+  font-size: 50px;
+  padding: 17px;
+}
+#Services .service-box i:hover {
+  color: #fff;
+  background: #FFB400;
+  border: 1px solid #FFB400;
+}
+#Services .service-box i:hover border {
+  transform: rotate(45deg);
+}
+#Services .service-box h3 {
+  padding: 1rem 0;
+  font-size: 22px;
+}
+
+#Meals {
+  padding: 3rem 0;
+  background-attachment: fixed;
+}
+#Meals .meals-text {
+  padding-bottom: 2rem;
+}
+#Meals .meals-text h2 {
+  color: #fff;
+}
+#Meals .meals-text p {
+  color: #808080;
+}
+#Meals .meals-left1 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-left2 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-left3 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-left4 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-left5 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-left6 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+#Meals .meals-box .meals-right {
+  padding: 14px;
+}
+#Meals .meals-box .meals-right .overlay-meals {
+  background: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#Meals .meals-box .meals-right h3 {
+  color: #fff;
+  font-size: 20px;
+}
+#Meals .meals-box .meals-right p {
+  color: #808080;
+}
+#Meals .meals-box .meals-right .meals-price {
+  padding-left: 6px;
+  position: relative;
+  justify-content: space-around;
+}
+#Meals .meals-box .meals-right .meals-price p {
+  color: #FFB400;
+  padding: 0 10px;
+}
+#Meals .meals-box .meals-right .meals-price a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 25px 0px 25px;
+  text-decoration: none;
+}
+#Meals .meals-box .meals-right .meals-price a:hover {
+  color: #fff;
+  background: #fac564;
+  border: none;
+}
+
+#Pricing {
+  background-attachment: fixed;
+}
+#Pricing .pricing-text h2 {
+  color: #fff;
+}
+#Pricing .pricing-text p {
+  color: #808080;
+}
+#Pricing .pricing-list .list-price-box h5 {
+  color: #fff;
+}
+#Pricing .pricing-list .list-price-box span {
+  color: #FFB400;
+  padding: 0 10px;
+}
+#Pricing .pricing-list .list-price-box p {
+  color: #fac564;
+}
+#Pricing .pricing-list .list1 p {
+  color: #808080;
+}
+#Pricing .pricing-list .list1 .list-img1 .ssss {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+#Pricing .pricing-list .list2 p {
+  color: #808080;
+}
+#Pricing .pricing-list .list2 .list-img2 .ssss {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+#Pricing .pricing-list .list3 p {
+  color: #808080;
+}
+#Pricing .pricing-list .list3 .list-img3 .ssss {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+#Pricing .pricing-list .list4 p {
+  color: #808080;
+}
+#Pricing .pricing-list .list4 .list-img4 .ssss {
+  background: url(https://colorlib.com/preview/theme/pizza/images/pizza-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+#Friends {
+  margin-top: 5rem;
+  background-attachment: fixed;
+}
+#Friends .friends-all .friend1 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/gallery-1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+}
+#Friends .friends-all .friend1:hover .friend-icon i {
+  opacity: 1;
+}
+#Friends .friends-all .friend1:hover .friend-icon i::after {
+  opacity: 1;
+  transform: rotate(60deg);
+  transition: transform .3s ease-in-out;
+}
+#Friends .friends-all .friend1 .friend-icon i {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+#Friends .friends-all .friend1 .friend-icon i::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  background: #FFB400;
+  opacity: 0;
+  left: 42.8%;
+  top: 38%;
+}
+#Friends .friends-all .friend2 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/gallery-2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+}
+#Friends .friends-all .friend2:hover .friend-icon i {
+  opacity: 1;
+}
+#Friends .friends-all .friend2:hover .friend-icon i::after {
+  opacity: 1;
+  transform: rotate(60deg);
+  transition: transform .3s ease-in-out;
+}
+#Friends .friends-all .friend2 .friend-icon i {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+#Friends .friends-all .friend2 .friend-icon i::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  background: #FFB400;
+  opacity: 0;
+  left: 42.8%;
+  top: 38%;
+}
+#Friends .friends-all .friend3 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/gallery-3.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+}
+#Friends .friends-all .friend3:hover .friend-icon i {
+  opacity: 1;
+}
+#Friends .friends-all .friend3:hover .friend-icon i::after {
+  opacity: 1;
+  transform: rotate(60deg);
+  transition: transform .3s ease-in-out;
+}
+#Friends .friends-all .friend3 .friend-icon i {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+#Friends .friends-all .friend3 .friend-icon i::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  background: #FFB400;
+  opacity: 0;
+  left: 42.8%;
+  top: 38%;
+}
+#Friends .friends-all .friend4 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/gallery-4.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+}
+#Friends .friends-all .friend4:hover .friend-icon i {
+  opacity: 1;
+}
+#Friends .friends-all .friend4:hover .friend-icon i::after {
+  opacity: 1;
+  transform: rotate(60deg);
+  transition: transform .3s ease-in-out;
+}
+#Friends .friends-all .friend4 .friend-icon i {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+#Friends .friends-all .friend4 .friend-icon i::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  background: #FFB400;
+  opacity: 0;
+  left: 42.8%;
+  top: 38%;
+}
+
+#Counter {
+  background: url(https://colorlib.com/preview/theme/pizza/images/bg_2.jpg);
+  background-position: 50% 15rem;
+  position: relative;
+  background-attachment: fixed;
+  padding: 3rem 0;
+}
+#Counter .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.7;
+}
+#Counter .counter-all i {
+  color: #fac564;
+  font-size: 45px;
+  padding: 10px;
+}
+#Counter .counter-all i:hover {
+  color: #fff;
+  background: #fac564;
+  border: none;
+}
+#Counter .counter-all h5 {
+  color: #fac564;
+  font-size: 30px;
+}
+#Counter .counter-all p {
+  color: #808080;
+}
+
+#Map .map-all .map-contact {
+  background: #000;
+  padding: 1rem;
+}
+#Map .map-all .map-contact h2 {
+  color: #fff;
+}
+#Map .map-all .map-contact a {
+  color: #fff;
+  background: #fac564;
+  padding: 10px 32px;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+#Map .map-all .map-contact a:hover {
+  border: 1px solid #fac564;
+  background: transparent;
+  color: #fac564;
+  transition: all .3s ease-in-out;
+}
+#Map .map-all .map-contact input {
+  background: transparent;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 61px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#Map .map-all .map-contact textarea {
+  background: transparent;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 61px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#Footer {
+  padding: 5rem 0;
+}
+#Footer .footer-all .recent .blog-date i {
+  color: #fff;
+  padding-left: 13px;
+  font-size: 11px;
+}
+#Footer .footer-all .recent .blog-date span {
+  color: #808080;
+  padding-left: 5px;
+  font-size: 11px;
+}
+#Footer .footer-all .recent .recent-img1 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/image_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+}
+#Footer .footer-all .recent .recent-img2 {
+  background: url(https://colorlib.com/preview/theme/pizza/images/image_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+}
+#Footer .footer-all .recent p {
+  cursor: pointer;
+}
+#Footer .footer-all .recent p:hover {
+  color: #FFB400;
+}
+#Footer .footer-all h3 {
+  color: #fff;
+  font-size: 20px;
+}
+#Footer .footer-all p {
+  color: #808080;
+}
+#Footer .footer-all .footer-icon {
+  margin: 2rem 0;
+}
+#Footer .footer-all .footer-icon i {
+  color: #fff;
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #343a40;
+  margin-right: 1rem;
+}
+#Footer .footer-all .footer-icon i:hover {
+  box-shadow: 4px 11px 18px 0px #FFB400;
+  color: #808080;
+}
+#Footer .footer-all .footer-icon i:nth-child(2) {
+  padding: 15px 20px;
+}
+#Footer .footer-all i {
+  font-size: 14px;
+  color: #Fff;
+  padding: 1rem 0;
+}
+#Footer .footer-all i span {
+  color: #808080;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+/*# sourceMappingURL=style.css.map */

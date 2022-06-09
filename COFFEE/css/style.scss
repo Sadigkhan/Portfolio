@@ -1,0 +1,909 @@
+// -------------------- Header - Start ----------------------- //
+
+#Header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    span{
+        display: none;
+    }
+    #navbarNav{
+        display: none;
+    }
+    .openBtn {
+        background: transparent;
+        border: none;
+        padding: 0px 15px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        .closebtn{
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 5rem;
+            cursor: pointer;
+            color: white;
+            &:hover{
+                color: #ccc;
+            }
+        }
+        .overlay-content {
+            position: relative;
+            top: 42%;
+            left: 8%;
+            width: 80%;
+            text-align: center;
+            margin-top: 30px;
+            margin: auto;
+            input{
+                padding: 15px;
+                font-size: 14px;
+                border: none;
+                float: left;
+                width: 60%;
+                background: white;
+                &:hover{
+                    background: #f1f1f1;
+                }
+            }
+            button{
+                float: left;
+                width: 20%;
+                height: 4.4rem;
+                background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    background: #bbb;
+                }
+            }
+          }
+      }
+    img{
+        width: 70%;
+    }
+    .menu-drop{
+        i{
+            padding: 0;
+            color: #fff;
+            padding: 7px;
+            font-size: 30px;
+            margin-top: 11px;
+            border-radius: 10px;
+            position: absolute;
+            top: -4rem;
+            left: 29rem;
+        
+        }
+    }
+    li{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        &:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    i{
+        color: #fff;
+        padding: 28px 16px;
+    }
+    .li::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 4px;
+        bottom: 5px;
+        left: 0;
+        background-color: #fff;
+        transform-origin: bottom right;
+        transition: transform .3s ease-in-out;
+    }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        &:hover .dropdown-content{
+            display: block;
+        }
+        &:hover{
+            .dropbtn{
+                background: rgb(190, 156, 121);
+            }
+        }
+        .dropbtn {
+            background: transparent;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        .dropdown-content {
+            display: none;
+            top: 98%;
+            position: absolute;
+            background-color: rgb(153, 125, 97);
+            opacity: 1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a{
+                color: #fff;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+                &:hover{
+                    background-color:#121212;
+                }
+              }
+            }
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            text-align:center;
+            
+            a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #fff;
+                display: block;
+                transition: 0.3s;
+                &:hover{
+                    color: #fff;
+                    font-weight:bold;
+                    transform: scale(1.1);
+                    transform: translateX(10px);
+                }
+          }
+          .closebtn{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+}
+span{
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+}
+#Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 1s ease-in-out;
+    height: auto;
+    background-color: transparent;
+    
+    line-height: 40px;
+}
+
+#Header.active {
+    background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+// -------------------- Header - End ----------------------- //
+
+
+// -------------------- Slider - Start --------------------- //
+
+#Slider{
+    z-index: 1;
+    .slider-content{
+        .slick-dots{
+            position: absolute;
+            bottom: 1rem;
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+            li{
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+                button{
+                    background: rgb(190, 156, 121);   
+                    border-radius: 50px;
+                                 
+                }
+                button::before{
+                    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+                    content: "\f192";
+                    font-size: 10px;
+                    line-height: 20px;
+                    position: absolute;
+                    top: 0;
+                    left: 0.6px;
+                    width: 20px;
+                    height: 20px;               
+                    text-align: center;
+                    opacity: 1;
+                    color: #fff;
+                }
+            }
+        }
+        }
+        .slick-prev{
+            position: absolute;
+            left: 3rem;
+            z-index: 1;
+            transform: rotate(180deg);
+            visibility: hidden;
+        }
+        .slick-prev:before{
+            content: '→';
+            background: rgb(190, 156, 121);
+            border-radius: 50px;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+            
+        }
+        .slick-next{
+            position: absolute;
+            right: 3rem;
+            z-index: 1;
+            visibility: hidden;
+        }
+        .slick-next:before{
+            content: '→';
+            background: rgb(190, 156, 121);
+            border-radius: 50px;
+            padding: 10px 10px;
+            font-family: 'slick';
+            font-size: 30px;
+            line-height: 1;
+            color: white;
+        }
+        .slider1{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 8rem 35rem;
+            .slider1-text{
+                img{
+                    display: inline-block !important;
+                }
+                h2{
+                    font-size: 68px;
+                    line-height: 78px;
+                    font-weight: 400;
+                    color: rgb(255, 255, 255);
+                    letter-spacing: 5px;
+                    font-family: Marcellus;
+                }
+                p{
+                    color: #fff;
+                    padding: 2rem 0;
+                    
+                }
+                a{
+                    border: 2px solid rgb(190, 156, 121);
+                    color: #fff;
+                    background: transparent;
+                    padding: 12px 3rem;
+                    text-decoration: none;
+                    &:hover{
+                        background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+                        color: #fff;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+        .slider2{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 8rem 35rem;
+            .slider2-text{
+                img{
+                    display: inline-block !important;
+                }
+                h2{
+                    font-size: 68px;
+                    line-height: 78px;
+                    font-weight: 400;
+                    color: rgb(255, 255, 255);
+                    letter-spacing: 5px;
+                    font-family: Marcellus;
+                }
+                p{
+                    color: #fff;
+                    padding: 2rem 0;
+                }
+                a{
+                    border: 2px solid rgb(190, 156, 121);
+                    color: #fff;
+                    background: transparent;
+                    padding: 12px 3rem;
+                    text-decoration: none;
+                    &:hover{
+                        background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+                        color: #fff;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+        .slider3{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 8rem 35rem;
+            .slider3-text{
+                img{
+                    display: inline-block !important;
+                }
+                h2{
+                    font-size: 68px;
+                    line-height: 78px;
+                    font-weight: 400;
+                    color: rgb(255, 255, 255);
+                    letter-spacing: 5px;
+                    font-family: Marcellus;
+                }
+                p{
+                    color: #fff;
+                    padding: 2rem 0;
+                }
+                a{
+                    border: 2px solid rgb(190, 156, 121);
+                    color: #fff;
+                    background: transparent;
+                    padding: 12px 3rem;
+                    text-decoration: none;
+                    &:hover{
+                        background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+                        color: #fff;
+                        transition: all .5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+// ------------------------------------ Slider - End ------------------------- //
+
+
+
+// ------------------------------------ Offer - Start ------------------------ //
+#Offer{
+    // background-image: linear-gradient(to right, rgb(190, 156, 121) ,#000);
+    // color: #fff;
+    margin-top: -2rem;
+    padding: 2rem 0;
+    .offer-text{
+        h2{
+            font-family: Marcellus,sans-serif;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+        h6{
+            font-family: Open Sans;
+            font-size: 18px;
+            line-height: 1.55em;
+            font-style: normal;
+            font-weight: 300;
+            padding: 16px 0;
+        }
+    }
+    .offer-box{
+        h4{
+            cursor: pointer;
+            padding: 10px 0;
+            &:hover{
+                color: rgb(190, 156, 121);
+                transition: color .3s ease-in-out;
+            }
+        }
+        img{
+            &:hover{
+                filter: brightness(0.5);
+                transition: filter .3s ease-in-out;
+            }
+        }
+    }
+}
+
+// ------------------ Offer - Start ------------ //
+
+
+
+// ------------------ Herald - Start ----------- //
+
+#Herald{
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    background-attachment: fixed;
+    .herald-text{
+        h2{
+            font-family: Marcellus,sans-serif;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+        h6{
+            font-family: Open Sans;
+            font-size: 18px;
+            line-height: 1.55em;
+            font-style: normal;
+            font-weight: 300;
+            padding: 16px 0;
+        }
+    }
+    .herald-box{
+        .herald-box1{
+            box-shadow: -10px 9px 13px rgb(190, 156, 121);
+            &:hover{
+                transform: translateY(2rem);
+                transition: all .3s ease-in-out;
+            }
+        }
+        .herald-box2{
+            box-shadow: -10px 9px 13px rgb(190, 156, 121);
+            &:hover{
+                transform: translateY(2rem);
+                transition: all .3s ease-in-out;
+            }
+        }
+        .herald-box3{
+            box-shadow: -10px 9px 13px rgb(190, 156, 121);
+            &:hover{
+                transform: translateY(2rem);
+                transition: all .3s ease-in-out;
+            }
+        }
+        img{
+            filter: sepia(1);
+            cursor: pointer;
+            &:hover{
+                filter: none;
+                transition: all .3s ease-in;
+            }
+        }
+        h4{
+            padding: 12px 0;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                color: rgb(190, 156, 121);
+                transition: color .3s ease-in-out;
+            }
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                color: rgb(190, 156, 121);
+                margin-left: 10px;
+                font-weight: bold;
+                transition: all .3s ease-in-out;
+                
+            }
+        }
+    }
+
+}
+
+// --------------- Herald - End ---------------//
+
+
+// --------------- Coffee - Start ------------ //
+
+#Coffee{
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    background-position: 50% 49px;
+    padding: 5rem 0rem;
+    background-attachment: fixed;
+    background-position: 50% 49px;
+}
+
+// --------------- Coffee - End --------------- //
+
+
+
+// --------------- Count - Start --------------- //
+
+#Count{
+    margin: 5rem 0;
+    .count-box{
+        box-shadow: 0px 3px 8px 0px rgb(190, 156, 121);
+        h3{
+            font-size: 60px;
+            color: rgb(190, 156, 121);
+        }
+        h5{
+            font-weight: 400;
+        }
+    }
+
+}
+
+
+// --------------------------------------------- Count - End -------------------------------------------- //
+
+
+// ------------------------------------------------- Online - Start ---------------------------------- //
+
+#Online{
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    padding: 5rem 0;
+    background-attachment: fixed;
+    h4{
+        font-size: 20px;
+    }
+    .online-text{
+        h2{
+            font-family: Marcellus,sans-serif;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+        h6{
+            font-family: Open Sans;
+            font-size: 18px;
+            line-height: 1.55em;
+            font-style: normal;
+            font-weight: 300;
+            padding: 16px 0;
+        }
+    }
+    .online-img{
+        &:hover .overlay{
+            opacity: 1;
+            transition: all .3s ease-in-out;
+            transform: translateY(8rem);
+        }
+        .overlay{
+            opacity: 0;
+            a{
+                color: #fff;
+                background: rgb(190, 156, 121);
+                padding: 15px 2rem;
+                text-decoration: none;
+                &:hover{
+                    background: #000;
+                    transition: background .3s ease-in-out;
+                }
+    
+            }
+        }
+    }
+}
+
+// ------------------------------------------------- Online - End ---------------------------------- //
+
+
+
+// --------------------------------------- Sweet - Start --------------------------------------- //
+
+#Sweet{
+    padding: 3rem 0;
+    .sweet-text{
+        h2{
+            font-family: Marcellus,sans-serif;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+        h6{
+            font-family: Open Sans;
+            font-size: 18px;
+            line-height: 1.55em;
+            font-style: normal;
+            font-weight: 300;
+            padding: 16px 0;
+        }
+    }
+    .sweetbox{
+        img{
+            &:hover{
+                filter: sepia(1);
+                
+            }
+        }
+    }
+}
+
+
+
+// --------------------------------------- Sweet - End ----------------------------------------- //
+
+
+// --------------------------------------- Brands - Start --------------------- //
+
+#Brands{
+    margin: 3rem 0;
+    .brands-contain{
+        img{
+            cursor: pointer;
+            padding-bottom: 2rem;
+            &:hover{
+                transform: translateY(10px);
+                transform: scale(1.5);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+
+
+// --------------------------------------- Brands - End -------------------------------- //
+
+
+// --------------------------------------- Lorem - Start ------------------------------ //
+
+#Lorem{
+    padding: 5rem 0;
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+    background-attachment: fixed;
+        a{
+            background: rgb(190, 156, 121);
+            color: #fff;
+            font-weight: bold;
+            padding: 12px 20px;
+            text-decoration: none;
+            &:hover{
+                background: #000;
+                transition: background .3s ease-in-out;
+            }
+        }
+}
+
+// --------------------------------------- Lorem - End --------------------------------- //
+
+
+
+// --------------------------------------- Footer - Start ------------------------------ //
+
+#Footer{
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/footer-top-img-1.jpg);
+    color: #fff;
+    padding: 5rem 0;
+    background-attachment: fixed;
+    .ft-bottom{
+        .ft-input{
+            input{
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                padding: 10px 4rem 10px 9px;
+            }
+            i{
+                background: #fff;
+                color: #000;
+                font-size: 35px;
+                padding: 5px 10px;
+                cursor: pointer;
+                &:hover{
+                    background: rgb(190, 156, 121);
+                    transition: background .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+
+
+// --------------------------------------- Footer - End ------------------------------ //
+
+
+// --------------------------------------- Footer2 - Start ------------------------------ //
+
+#Footer-2{
+    background: #121212;
+    padding: 50px 42px;
+    color: #fff;
+    span{
+        cursor: pointer;
+        &:hover{
+            color: rgb(190, 156, 121);
+            transition: color .3s ease-in-out;
+        }
+    }
+    .ft-nav{
+        p{
+            font-weight: bold;
+            padding-right: 1rem;
+            font-size: 20px;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            &:hover::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+        p:after{
+            content: '';
+            position: absolute;
+            width: 80%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgb(190, 156, 121);;
+            transform-origin: bottom right;
+            transition: transform .5s ease-in-out;
+        }
+    }
+    i{
+        font-size: 20px;
+        padding-right: 1rem;
+        cursor: pointer;
+        &:hover{
+            color: rgb(190, 156, 121);
+            transition: color .3s ease-in-out;
+        }
+    }
+}
+
+
+// --------------------------------------- Footer2 - End ------------------------------ //
+
+@media (max-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    #Header{
+        height: 100px;
+        img{
+            width: 40%;
+        }
+        span{
+            font-size: 35px;
+            cursor: pointer;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            display: block;
+        }
+        
+        // .menu-drop{
+        //     i{
+        //         margin-top: 20px;
+        //     }
+        // }
+        // .dropdown{
+        //     .dropdown-content{
+        //         visibility: hidden;
+        //         display: none;
+        //         top: 0%;
+        //         left: 100%;
+        //         position: absolute;
+        //         background-color: #997d61;
+        //         opacity: 1;
+        //         min-width: 160px;
+        //         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        //         z-index: 1;
+        //     }
+        // }
+        // img{
+        //     width:150px;
+        // }
+        // li{
+        //     width: 78px;
+        // }
+    }
+
+    #Slider{
+        .slider-content{
+            .slick-dots{
+                position: absolute;
+                bottom: -2rem;
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+            }
+        }
+        img{
+            width: 20%;
+        }
+        .slider1{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 1rem 0rem;
+            .slider1-text{
+                h2{
+                    font-size: 41px;
+                    line-height: 43px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0px;
+                    font-family: Marcellus;
+                }
+            }
+        }
+        .slider2{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 1rem 0rem;
+            .slider2-text{
+                h2{
+                    font-size: 41px;
+                    line-height: 43px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0px;
+                    font-family: Marcellus;
+                }
+            }
+        }
+        .slider3{
+            background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8rem 0rem 1rem 0rem;
+            .slider3-text{
+                h2{
+                    font-size: 41px;
+                    line-height: 43px;
+                    font-weight: 400;
+                    color: white;
+                    letter-spacing: 0px;
+                    font-family: Marcellus;
+                }
+            }
+        }
+    }
+
+    #Offer{
+        margin-top: 3rem;
+    }
+  }

@@ -1,0 +1,558 @@
+@charset "UTF-8";
+#Header {
+  background: #171C26;
+  padding: 10px 0;
+}
+
+#Header .header-social i {
+  cursor: pointer;
+}
+
+#Header .header-social i:hover {
+  color: #FFB400;
+}
+
+#Header i {
+  font-size: 14px;
+  color: #b8b7b7;
+  padding: 0px 5px;
+}
+
+#Header a {
+  color: #b8b7b7;
+}
+
+#Menu {
+  background: #171C26;
+}
+
+#Menu img {
+  width: 80%;
+}
+
+#Menu li {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+#Menu li:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#Menu i {
+  color: #fff;
+  padding: 19px 16px;
+}
+
+#Menu .li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #EEEEEE;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+#Menu .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#Menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#Menu .dropdown:hover .dropbtn {
+  background: #FFB400;
+}
+
+#Menu .dropdown .dropbtn {
+  background: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+  font-weight: 600;
+}
+
+#Menu .dropdown .dropdown-content {
+  display: none;
+  top: 95%;
+  position: absolute;
+  background-color: #000;
+  opacity: .7;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#Menu .dropdown .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+#Menu .dropdown .dropdown-content a:hover {
+  background-color: #FFB400;
+}
+
+#Menu .search-button .search-input input {
+  padding: 10px 25px 8.5px 6px;
+  visibility: hidden;
+}
+
+#Menu .search-button .search-icon i {
+  background: #EEEEEE;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+#Menu .search-button .search-icon i:hover {
+  background: #FFB400;
+  padding: 15px;
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  border-radius: 0;
+}
+
+#Menu .search-button:hover .search-input input {
+  visibility: visible;
+}
+
+#Slider {
+  background: url(http://storage.googleapis.com/themevessel-products/auto-car/img/banner-slider-1.jpg);
+  padding: 10rem 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Slider .slider-contain .button-slider .btn1 {
+  color: #fff;
+  padding: 10px 21px;
+  font-weight: bold;
+}
+
+#Slider .slider-contain .button-slider .btn2 {
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #FFB400;
+  color: #FFB400;
+}
+
+#Slider .slider-contain .button-slider .btn2:hover {
+  color: #Fff;
+  background: #FFB400;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#Slider .slider-contain .slick-prev {
+  position: absolute;
+  left: 3rem;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#Slider .slider-contain .slick-prev:before {
+  content: '→';
+  background: #FFB400;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+
+#Slider .slider-contain .slick-next {
+  position: absolute;
+  right: 3rem;
+  z-index: 1;
+}
+
+#Slider .slider-contain .slick-next:before {
+  content: '→';
+  background: #FFB400;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+
+#Slider .slider-contain .slider-text h1 {
+  color: #fff;
+  font-weight: bold;
+}
+
+#Slider .slider-contain .slider-text p {
+  color: #b8b7b7;
+}
+
+#Featured {
+  margin: 5rem 0;
+}
+
+#Featured .featured-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Featured .featured-car .car-img {
+  position: relative;
+}
+
+#Featured .featured-car .car-img:hover .overlay {
+  visibility: visible;
+}
+
+#Featured .featured-car .car-img .overlay {
+  position: absolute;
+  background: #000;
+  visibility: hidden;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#Featured .featured-car .car-img .overlay p {
+  color: #fff;
+  font-weight: bold;
+}
+
+#Featured .featured-car .car-img .overlay .overlay-icon i {
+  background: #FFB400;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#Featured .featured-car .car-name h5 {
+  font-size: 17px;
+  color: #FFB400;
+  cursor: pointer;
+}
+
+#Featured .featured-car .car-name h5:hover {
+  color: #171C26;
+}
+
+#Featured .featured-car .car-name p {
+  font-size: 12px;
+}
+
+#Featured .featured-car .car-name i {
+  color: #FFB400;
+}
+
+#Featured .featured-car .car-name span {
+  color: #171C26;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+#Best {
+  margin: 5rem 0;
+}
+
+#Best .best-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Best .best-box i {
+  background: #FFB400;
+  border-radius: 50px;
+  padding: 15px 18px;
+  font-size: 17px;
+  color: #fff;
+}
+
+#Best .best-box h6 {
+  color: #FFB400;
+  font-weight: bold;
+}
+
+#Best .best-box p {
+  font-size: 12px;
+  color: #171C26;
+}
+
+#Best .best-btn .btn3 {
+  color: #fff;
+  font-weight: bold;
+}
+
+#Offers .offers-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Offers .offers-photo .offers-photo-top .photo1 {
+  width: 100%;
+}
+
+#Offers .offers-photo .offers-photo-bottom .photo2 {
+  width: 50%;
+  padding-left: 15px;
+}
+
+#Offers .offers-photo .offers-photo-bottom .photo3 {
+  width: 50%;
+  padding-right: 15px;
+}
+
+#Offers .offers-photo .photo4 {
+  width: 100%;
+  height: 100%;
+}
+
+#Blog {
+  margin: 5rem 0;
+}
+
+#Blog .blog-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Blog .blog-box h5 {
+  font-size: 17px;
+}
+
+#Blog .blog-box span {
+  color: #FFB400;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#Blog .blog-box p {
+  color: #171C26;
+}
+
+#Blog .blog-box a {
+  border: 1px solid #FFB400;
+  color: #FFB400;
+  background: transparent;
+  padding: 9px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#Blog .blog-box a:hover {
+  background: #FFB400;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#Testimonial {
+  background: url(http://storage.googleapis.com/themevessel-products/auto-car/img/testimonials-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#Testimonial .overlay {
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#Testimonial .test-text .slick-prev {
+  position: absolute;
+  left: 3rem;
+  z-index: 1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#Testimonial .test-text .slick-prev:before {
+  content: '→';
+  background: #171C26;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#Testimonial .test-text .slick-next {
+  position: absolute;
+  right: 3rem;
+  z-index: 1;
+}
+
+#Testimonial .test-text .slick-next:before {
+  content: '→';
+  background: #171C26;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#Testimonial .test-text .test-slider h1 {
+  color: #c7c1c1;
+  font-size: 34px;
+}
+
+#Testimonial .test-text .test-slider p {
+  color: #c7c1c1;
+}
+
+#Testimonial .test-text .test-slider img {
+  width: 8%;
+  border-radius: 60px;
+  display: inline-block;
+}
+
+#Testimonial .test-text .test-slider h5 {
+  color: #c7c1c1;
+  padding-top: 1rem;
+}
+
+#Agent {
+  margin: 5rem 0;
+}
+
+#Agent .agent-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#Agent .agent-contain .agent-box {
+  -webkit-box-shadow: 4px 11px 7px #808080;
+          box-shadow: 4px 11px 7px #808080;
+}
+
+#Agent .agent-contain .social {
+  display: inline-block;
+}
+
+#Agent .agent-contain .social i {
+  padding-right: 8px;
+  color: #808080;
+}
+
+#Agent .agent-contain .social i:hover {
+  color: #FFB400;
+  cursor: pointer;
+}
+
+#Agent .agent-contain h6 {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#Agent .agent-contain h6:hover {
+  color: #FFB400;
+}
+
+#Footer {
+  background: #111111;
+}
+
+#Footer h2 {
+  color: #7C7e83;
+  font-size: 20px;
+}
+
+#Footer p {
+  color: #7C7e83;
+}
+
+#Footer hr {
+  color: #7C7e83;
+}
+
+#Footer i {
+  color: #7C7e83;
+  padding: 1rem 0;
+}
+
+#Footer .footer-top {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+#Footer .footer-top .footer-social i {
+  font-size: 25px;
+  color: #fff;
+}
+
+#Footer .footer-top .footer-social i:before:nth-child(1) {
+  background: #4867AA;
+}
+
+#Footer .footer-top .footer-social i:nth-child(2) {
+  background: #33CCFF;
+}
+
+#Footer .footer-top .footer-social i:nth-child(3) {
+  background: #DB4437;
+}
+
+#Footer .footer-top .footer-social i:nth-child(4) {
+  background: #0177B5;
+}
+
+#Footer .footer-top .footer-social i:nth-child(5) {
+  background: #D4061D;
+}
+
+#Footer .tags a {
+  color: #7C7e83;
+  border: .5px solid #7C7e83;
+  font-size: 13px;
+}
+
+#Footer .links p {
+  cursor: pointer;
+}
+
+#Footer .links p:hover {
+  color: #fff;
+}
+
+#Footer .footer-bottom .recent-right {
+  padding-left: 2rem;
+}
+
+#Footer .footer-bottom .recent-right h3 {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

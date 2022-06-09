@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor-Site</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header - Start -->
+    <section id="Header" class="header">
+        <!-- <div class="Header111"> -->
+            <div class="header-contain row">
+                <div class="col-md-6 header-left">
+                    <img src="https://stickeroid.com/uploads/pic/fx0n217l-full/thumb/stickeroid_5bf558f14bb52.png" style="width: 10%">
+                </div>
+                    <div class="col-md-6 header-right row justify-content-between">
+                        <div class="right1 d-flex">
+                            <div class="right-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="right-text">
+                                <a href="#">+994 502656463</a>
+                                <br>
+                                <a href="#">+994 555121232</a>
+                            </div>
+                        </div>
+                        <div class="right2 d-flex">
+                            <div class="right-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="right-text">
+                                <span>Bakı şəhəri,Nərimanov ray.
+                                    <br>
+                                        Ziya Bünyadov pros,36A
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header - End -->
+
+
+
+    <!-- Menubar - Start -->
+    <section id="Menubar">
+        <div class="container">
+            <div class="row">
+                    <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">HOME</a>
+                            <a href="#">ABOUT</a>
+                            <a href="#">TEAM</a>
+                            <a href="#">PAGES</a>
+                            <a href="#">SERVICES</a>
+                            <a href="#">DEPARTAMENTS</a>
+                            <a href="#">TIMETABLES</a>
+                            <a href="#">GALLERY</a>
+                            <a href="#">BLOG</a>
+                            <a href="#">CONTACT US</a>
+                          </div>
+                          
+                          <div id="main">
+                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                          </div>
+                    <img src="https://stickeroid.com/uploads/pic/fx0n217l-full/thumb/stickeroid_5bf558f14bb52.png" style="width: 10%">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btnHome">HOME</button>
+                    <button type="button" class="btn btn-primary">ABOUT</button>
+                    <button type="button" class="btn btn-primary">TEAM</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                         PAGES
+                      </button>
+                      <div class="dropdown-menu Dm-contain">
+                        <a class="dropdown-item dm-contain" href="#">Clients</a>
+                        <a class="dropdown-item dm-contain" href="#">Partners</a>
+                        <a class="dropdown-item dm-contain" href="#">Pricing</a>
+                        <a class="dropdown-item dm-contain" href="#">Careers</a>
+                        <a class="dropdown-item dm-contain" href="#">Terms</a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">SERVICES</button>
+                    <button type="button" class="btn btn-primary">DEPARTAMENTS</button>
+                    <button type="button" class="btn btn-primary">TIMETABLES</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                           GALLERY
+                        </button>
+                        <div class="dropdown-menu Dm-contain">
+                          <a class="dropdown-item dm-contain" href="#">Grid Gallery</a>
+                          <a class="dropdown-item dm-contain" href="#">Gallery Without Padding</a>
+                          <a class="dropdown-item dm-contain" href="#">Masonry Gallery</a>
+                          <a class="dropdown-item dm-contain" href="#">Cobbles Gallery</a>
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                           BLOG
+                        </button>
+                        <div class="dropdown-menu Dm-contain">
+                          <a class="dropdown-item dm-contain" href="#">Masonry Blog</a>
+                          <a class="dropdown-item dm-contain" href="#">Modern Blog</a>
+                          <a class="dropdown-item dm-contain" href="#">Classic Blog</a>
+                          <a class="dropdown-item dm-contain" href="#">Grid Blog</a>
+                          <a class="dropdown-item dm-contain" href="#">Single Post</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-primary">CONTACT US</button>
+                      <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menubar - End -->
+
+
+    <!-- Slider - Start -->
+
+    <section id="Slider">
+        <div class="container">
+            <div class="slider-contain">
+                <div class="slide-dr d-flex">
+                    <div class="slide-text col-md-6 col-6">
+                        <h2>We Strive to Provide a Relaxed Atmosphere</h2>
+                        <p>Your health is our top priority with comprehensive, affordable medical, dental and women's health care.</p>
+                        <a href="#">MAKE AN APPOINTMENT</a>
+                    </div>
+                    <div class="slide-img col-md-6 col-6">
+                        <img class="img-fluid" src="https://purepng.com/public/uploads/large/purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctornotepad-1421526856962ngglq.png   ">
+                    </div>
+                </div>
+                <div class="slide-dr d-flex">
+                    <div class="slide-text col-md-6 col-6">
+                        <h2>MEDICINE THAT TOUCHES THE WORLD</h2>
+                        <p>Your health is our top priority with comprehensive, affordable medical, dental and women's health care.</p>
+                        <a href="#">MAKE AN APPOINTMENT</a>
+                    </div>
+                    <div class="slide-img col-md-6 col-6">
+                        <img class="img-fluid" src="https://purepng.com/public/uploads/large/purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctornotepad-1421526856962ngglq.png   ">
+                    </div>
+                </div>
+                <div class="slide-dr d-flex">
+                    <div class="slide-text col-md-6 col-6">
+                        <h2>PARTNERSHIPS
+                                FOR HEALTH</h2>
+                        <p>Your health is our top priority with comprehensive, affordable medical, dental and women's health care.</p>
+                        <a href="#">MAKE AN APPOINTMENT</a>
+                    </div>
+                    <div class="slide-img col-md-6 col-6">
+                        <img class="img-fluid" src="https://purepng.com/public/uploads/large/purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctornotepad-1421526856962ngglq.png   ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Slider - End -->
+
+    <!-- Info-box - Start -->
+    <section id="Info-box">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="boxes-info row">
+                    <div class="col-md-3 boxes-info1 mb-3">
+                        <div class="info-top d-flex">
+                            <i class="fas fa-business-time"></i>
+                            <h6>OPENING HOURS</h6>
+                        </div>
+                        <div class="info-hr">
+                            <hr>
+                        </div>
+                        <div class="info-bottom d-flex justify-content-between">
+                            <div class="info-bottom-left">
+                                <p>Mon–Fri</p>
+                                <p>Saturday</p>
+                                <p>Sunday</p>
+                            </div>
+                            <div class="info-bottom-right">
+                                <p>8:00am–7:00pm</p>
+                                <p>9:00am–5:00pm</p>
+                                <p>9:00am–3:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 boxes-info1 mb-3">
+                        <div class="info-top d-flex">
+                            <i class="fas fa-calendar-day"></i>
+                            <h6>DOCTORS' TIMETABLE</h6>
+                        </div>
+                        <div class="info-hr">
+                            <hr>
+                        </div>
+                        <div class="info-bottom">
+                            <p>The following is for guidance only to help you plan your appointment with a preferred doctor or nurse. It does not guarantee availability as the doctors or nurses may sometimes be attending to other duties.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 boxes-info1 mb-3">
+                        <div class="info-top d-flex">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h6>APPOINTMENTS</h6>
+                        </div>
+                        <div class="info-hr">
+                            <hr>
+                        </div>
+                        <div class="info-bottom">
+                            <p>The first step towards a healthy life  is to schedule an appointment. Please contact our office by phone or complete the appointment request form.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 boxes-info1 mb-3">
+                        <div class="info-top d-flex">
+                            <i class="fas fa-first-aid"></i>
+                            <h6>EMERGENCY CASES</h6>
+                        </div>
+                        <div class="info-hr">
+                            <hr>
+                        </div>
+                        <div class="info-bottom">
+                            <div class="info-bottom-call">
+                                <a href="#">+994 502656463</a>
+                                <p>Call us!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info-box - End -->
+
+    <!-- Different - Start -->
+    <section id="Different">
+        <div class="container">
+            <div class="different-text text-center">
+                <h3>What makes us different</h3>
+                <hr>
+            </div>
+            <div class="Different-box row w3-animate-left">
+               <div class="col-md-4 text-center">
+                <div class="df-icon">
+                    <i class="fas fa-capsules"></i>
+                </div>
+                <div class="df-text">
+                    <h5>Modern Medicines</h5>
+                    <p>We use a combination of traditional and modern medicines to heal patients.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="df-icon">
+                    <i class="fas fa-user-nurse"></i>
+                </div>
+                <div class="df-text">
+                    <h5>Qualified Doctors and Staff</h5>
+                    <p>Our team of more than 20 professionals are highly trained to serve our patients’ needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="df-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div class="df-text">
+                    <h5>Ambulance Services</h5>
+                    <p>We offer a courtesy shuttle to SANA patients who need help getting to their scheduled appointment.</p>
+                </div>
+            </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Different - End -->
+
+    <!-- Diagnostics - Start -->
+
+    <section id="Diagnostics">
+        <div class="diagnostics-text">
+            <h2>All kinds of <br> diagnostics</h2>
+            <p>All the tests you need. One convenient location. SANA Medical Center <br> has the region’s most comprehensive diagnostic and imaging services <br> available.</p>
+            <a href="#">FREE CONSULTATION</a>
+        </div>
+    </section>
+
+    <!-- Diagnostics - End -->
+
+    <!-- Services - Start -->
+
+    <section id="Services">
+        <div class="container">
+            <div class="services-text text-center">
+                <h3>MAIN SERVICES</h3>
+                <hr>
+                <p>We provide high-quality health care services for a whole family.</p>
+            </div>
+            <div class="service-box row">
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-01-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">ROUTINE MEDICAL CARE</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-02-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">PHYSIOTHERAPY</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-03-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">MINOR SURGERY</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-04-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">NURSING SERVICES</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-05-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">FLU VACCINATION</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/home-06-320x320.jpg">
+                    <div class="service-arrow d-flex">
+                        <i class="fas fa-arrow-right"></i> 
+                        <a href="#">DIAGNOSTIC IMAGING</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-btn text-center">
+                    <a href="#">VIEW ALL SERVICES</a>
+             </div>
+        </div>
+    </section>
+
+    <!-- Services - End -->
+
+    <!-- Doctors - Start -->
+    
+    <section id="Doctors">
+        <div class="doctors row">
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-05-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Scott Riley</h5>
+                    <p>Chief Medical Officer</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-06-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Johnny Fowler</h5>
+                    <p>Surgeon</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-07-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Eric Snyder</h5>
+                    <p>Ophthalmologist</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-08-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Martha Schmidt</h5>
+                    <p>Therapist</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-09-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Katherine Wong</h5>
+                    <p>Nurse</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+            <div class="col-md-2 dr-all col-6">
+                <div class="dr-img">
+                    <img class="img-fluid" src="https://livedemo00.template-help.com/wt_59090_v1/images/pages/our-team-05-384x410.jpg">
+                </div>
+                <div class="dr-text">
+                    <h5>Scott Riley</h5>
+                    <p>Chief Medical Officer</p>
+                </div>
+                <div class="dr-bottom">
+                    <p>VIEW FULL PROFILE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors - End -->
+
+
+    <!-- Tests - Start -->
+
+ <section id="Tests">
+        <div class="Tests-text">
+            <h2>TESTS FOR
+                <br>
+                EYE DISORDERS</h2>
+            <p>A variety of tests can be done to confirm a problem or to determine the 
+                <br> 
+            extent or severity of a disorder. Each eye is tested separately.</p>
+            <a href="#">FREE CONSULTATION</a>
+        </div>
+    </section>
+
+    <!-- Tests - End -->
+
+
+    <!-- Posts - Start -->
+
+    <section id="Posts">
+        <div class="container">
+            <div class="Posts-text text-center">
+                <h3>LATEST BLOG POSTS</h3>
+                <hr>
+            </div>
+            <div class="posts-box row">
+                <div class="col-md-4 post-box1 text-center">
+                    <div class="post-img">
+                        <img src="https://livedemo00.template-help.com/wt_59090_v1/images/blog/post-13-370x250.jpg">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-content-top">
+                            <h4>Protect the Skin You’re In</h4>
+                        </div>
+                        <div class="post-content-mid">
+                            <ul class="list-inline row justify-content-center">
+                                <li>July 4, 2019 at 8:12pm</li>
+                                <li>|</li>
+                                <li>Healthy Lifestyle</li>
+                            </ul>
+                        </div>
+                        <div class="post-content-bottom">
+                            <p>Many people think that melanoma is synonymous with skin cancer. In actuality, melanoma is just one type of skin cancer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 post-box1 text-center">
+                    <div class="post-img">
+                        <img src="https://livedemo00.template-help.com/wt_59090_v1/images/blog/post-14-370x250.jpg">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-content-top">
+                            <h4>10 Ways to Stay Healthy on a Road Trip</h4>
+                        </div>
+                        <div class="post-content-mid">
+                            <ul class="list-inline d-flex justify-content-center">
+                                <li>July 4, 2019 at 8:12pm</li>
+                                <li>|</li>
+                                <li>Healthy Lifestyle</li>
+                            </ul>
+                        </div>
+                        <div class="post-content-bottom">
+                                <p>Summer is the perfect time to pack up the family, grab some friends, or head out on the open road solo for a long drive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 post-box1 text-center">
+                    <div class="post-img">
+                        <img src="https://livedemo00.template-help.com/wt_59090_v1/images/blog/post-15-370x250.jpg">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-content-top">
+                            <h4>How Scientific Is Modern Medicine Really?</h4>
+                        </div>
+                        <div class="post-content-mid">
+                            <ul class="list-inline d-flex justify-content-center">
+                                <li>July 4, 2019 at 8:12pm</li>
+                                <li>|</li>
+                                <li>Healthy Lifestyle</li>
+                            </ul>
+                        </div>
+                        <div class="post-content-bottom">
+                            <p>Doctors today commonly assert that they practice “scientific medicine,” and patients think that the medical treatments they receive are “scientifically proven.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-btn text-center">
+                    <a href="#">VIEW ALL BLOG POSTS</a>
+             </div>
+        </div>
+    </section>
+
+    <!-- Posts - End -->
+    <section id="Map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.890090561949!2d49.837469614894395!3d40.4112855638955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308750ae2521f1%3A0x8d866cd6b5c61321!2s36+Ziya+B%C3%BCnyadov%2C+Baku%2C+Azerbaijan!5e0!3m2!1sen!2s!4v1562278213477!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <!-- Footer - Start -->
+
+    <section id="Footer">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="footer-all row justify-content-between">
+                        <div class="col-md-4 footer-left text-center">
+                                <div class="fl-img">
+                                    <img src="https://livedemo00.template-help.com/wt_59090_v1/images/logo.png">
+                                </div>
+                                <div class="fl-left-social">
+                                   <a href="www.fb.com"><i class="fab fa-facebook-f"></i></a>
+                                   <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                                   <a href="www.gmail.com"><i class="fab fa-google-plus-g"></i></a>
+                                   <a href="#"><i class="fas fa-wifi"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 footer-mid text-center">
+                                <div class="fm-text">
+                                    <h6>CONTACT US</h6>
+                                    <hr>
+                                </div>
+                                <div class="fm-list">
+                                    <ul class="list-inline">
+                                        <li><i class="fas fa-phone"><span>+994 502656463 , +994 555121232</span></i></li>
+                                        <li><i class="fas fa-map-marker-alt"><span>Bakı şəhəri,Ziya Bünyadov pros,36A</span></i></li>
+                                        <li><i class="far fa-envelope"><span>ashurlu85@gmail.com</span></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 footer-right text-center">
+                                <div class="fr-text">
+                                    <h6>NEWSLETTER</h6>
+                                    <hr>
+                                </div>
+                                <div class="fr-text2">
+                                    <p>Enter your email address to receive up-to-date news, new patient information and other useful stuff, delivered right to your inbox.</p>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your e-mail..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn footer-btn" type="button">SUBSCRIBE</button>
+                                    </div>
+                                  </div>
+                            </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - End -->
+
+</body>
+<script src="vendor/js/jquery-3.4.1.js"></script>
+<script src="vendor/js/slick.js"></script>
+<script src="js/app.js"></script>
+</html>

@@ -1,0 +1,755 @@
+@charset "UTF-8";
+#Header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+#Header span {
+  display: none;
+}
+#Header #navbarNav {
+  display: none;
+}
+#Header .openBtn {
+  background: transparent;
+  border: none;
+  padding: 0px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#Header .overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#Header .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 5rem;
+  cursor: pointer;
+  color: white;
+}
+#Header .overlay .closebtn:hover {
+  color: #ccc;
+}
+#Header .overlay .overlay-content {
+  position: relative;
+  top: 42%;
+  left: 8%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+#Header .overlay .overlay-content input {
+  padding: 15px;
+  font-size: 14px;
+  border: none;
+  float: left;
+  width: 60%;
+  background: white;
+}
+#Header .overlay .overlay-content input:hover {
+  background: #f1f1f1;
+}
+#Header .overlay .overlay-content button {
+  float: left;
+  width: 20%;
+  height: 4.4rem;
+  background-image: linear-gradient(to right, #be9c79, #000);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+#Header .overlay .overlay-content button:hover {
+  background: #bbb;
+}
+#Header img {
+  width: 70%;
+}
+#Header .menu-drop i {
+  padding: 0;
+  color: #fff;
+  padding: 7px;
+  font-size: 30px;
+  margin-top: 11px;
+  border-radius: 10px;
+  position: absolute;
+  top: -4rem;
+  left: 29rem;
+}
+#Header li {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+#Header li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#Header i {
+  color: #fff;
+  padding: 28px 16px;
+}
+#Header .li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 5px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform .3s ease-in-out;
+}
+#Header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#Header .dropdown:hover .dropdown-content {
+  display: block;
+}
+#Header .dropdown:hover .dropbtn {
+  background: #be9c79;
+}
+#Header .dropdown .dropbtn {
+  background: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+#Header .dropdown .dropdown-content {
+  display: none;
+  top: 98%;
+  position: absolute;
+  background-color: #997d61;
+  opacity: 1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#Header .dropdown .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+#Header .dropdown .dropdown-content a:hover {
+  background-color: #121212;
+}
+#Header .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #be9c79, #000);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+#Header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+#Header .sidenav a:hover {
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1.1);
+  transform: translateX(10px);
+}
+#Header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#Header span {
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}
+
+#Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 1s ease-in-out;
+  height: auto;
+  background-color: transparent;
+  line-height: 40px;
+}
+
+#Header.active {
+  background-image: linear-gradient(to right, #be9c79, #000);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+#Slider {
+  z-index: 1;
+}
+#Slider .slider-content .slick-dots {
+  position: absolute;
+  bottom: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+#Slider .slider-content .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+#Slider .slider-content .slick-dots li button {
+  background: #be9c79;
+  border-radius: 50px;
+}
+#Slider .slider-content .slick-dots li button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f192";
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0.6px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 1;
+  color: #fff;
+}
+#Slider .slick-prev {
+  position: absolute;
+  left: 3rem;
+  z-index: 1;
+  transform: rotate(180deg);
+  visibility: hidden;
+}
+#Slider .slick-prev:before {
+  content: '→';
+  background: #be9c79;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Slider .slick-next {
+  position: absolute;
+  right: 3rem;
+  z-index: 1;
+  visibility: hidden;
+}
+#Slider .slick-next:before {
+  content: '→';
+  background: #be9c79;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Slider .slider1 {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem 8rem 35rem;
+}
+#Slider .slider1 .slider1-text img {
+  display: inline-block !important;
+}
+#Slider .slider1 .slider1-text h2 {
+  font-size: 68px;
+  line-height: 78px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  font-family: Marcellus;
+}
+#Slider .slider1 .slider1-text p {
+  color: #fff;
+  padding: 2rem 0;
+}
+#Slider .slider1 .slider1-text a {
+  border: 2px solid #be9c79;
+  color: #fff;
+  background: transparent;
+  padding: 12px 3rem;
+  text-decoration: none;
+}
+#Slider .slider1 .slider1-text a:hover {
+  background-image: linear-gradient(to right, #be9c79, #000);
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+#Slider .slider2 {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem 8rem 35rem;
+}
+#Slider .slider2 .slider2-text img {
+  display: inline-block !important;
+}
+#Slider .slider2 .slider2-text h2 {
+  font-size: 68px;
+  line-height: 78px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  font-family: Marcellus;
+}
+#Slider .slider2 .slider2-text p {
+  color: #fff;
+  padding: 2rem 0;
+}
+#Slider .slider2 .slider2-text a {
+  border: 2px solid #be9c79;
+  color: #fff;
+  background: transparent;
+  padding: 12px 3rem;
+  text-decoration: none;
+}
+#Slider .slider2 .slider2-text a:hover {
+  background-image: linear-gradient(to right, #be9c79, #000);
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+#Slider .slider3 {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem 8rem 35rem;
+}
+#Slider .slider3 .slider3-text img {
+  display: inline-block !important;
+}
+#Slider .slider3 .slider3-text h2 {
+  font-size: 68px;
+  line-height: 78px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  font-family: Marcellus;
+}
+#Slider .slider3 .slider3-text p {
+  color: #fff;
+  padding: 2rem 0;
+}
+#Slider .slider3 .slider3-text a {
+  border: 2px solid #be9c79;
+  color: #fff;
+  background: transparent;
+  padding: 12px 3rem;
+  text-decoration: none;
+}
+#Slider .slider3 .slider3-text a:hover {
+  background-image: linear-gradient(to right, #be9c79, #000);
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+#Offer {
+  margin-top: -2rem;
+  padding: 2rem 0;
+}
+#Offer .offer-text h2 {
+  font-family: Marcellus,sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+#Offer .offer-text h6 {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 1.55em;
+  font-style: normal;
+  font-weight: 300;
+  padding: 16px 0;
+}
+#Offer .offer-box h4 {
+  cursor: pointer;
+  padding: 10px 0;
+}
+#Offer .offer-box h4:hover {
+  color: #be9c79;
+  transition: color .3s ease-in-out;
+}
+#Offer .offer-box img:hover {
+  filter: brightness(0.5);
+  transition: filter .3s ease-in-out;
+}
+
+#Herald {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+#Herald .herald-text h2 {
+  font-family: Marcellus,sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+#Herald .herald-text h6 {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 1.55em;
+  font-style: normal;
+  font-weight: 300;
+  padding: 16px 0;
+}
+#Herald .herald-box .herald-box1 {
+  box-shadow: -10px 9px 13px #be9c79;
+}
+#Herald .herald-box .herald-box1:hover {
+  transform: translateY(2rem);
+  transition: all .3s ease-in-out;
+}
+#Herald .herald-box .herald-box2 {
+  box-shadow: -10px 9px 13px #be9c79;
+}
+#Herald .herald-box .herald-box2:hover {
+  transform: translateY(2rem);
+  transition: all .3s ease-in-out;
+}
+#Herald .herald-box .herald-box3 {
+  box-shadow: -10px 9px 13px #be9c79;
+}
+#Herald .herald-box .herald-box3:hover {
+  transform: translateY(2rem);
+  transition: all .3s ease-in-out;
+}
+#Herald .herald-box img {
+  filter: sepia(1);
+  cursor: pointer;
+}
+#Herald .herald-box img:hover {
+  filter: none;
+  transition: all .3s ease-in;
+}
+#Herald .herald-box h4 {
+  padding: 12px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+#Herald .herald-box h4:hover {
+  color: #be9c79;
+  transition: color .3s ease-in-out;
+}
+#Herald .herald-box a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#Herald .herald-box a:hover {
+  color: #be9c79;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+#Coffee {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+  background-position: 50% 49px;
+  padding: 5rem 0rem;
+  background-attachment: fixed;
+  background-position: 50% 49px;
+}
+
+#Count {
+  margin: 5rem 0;
+}
+#Count .count-box {
+  box-shadow: 0px 3px 8px 0px #be9c79;
+}
+#Count .count-box h3 {
+  font-size: 60px;
+  color: #be9c79;
+}
+#Count .count-box h5 {
+  font-weight: 400;
+}
+
+#Online {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+#Online h4 {
+  font-size: 20px;
+}
+#Online .online-text h2 {
+  font-family: Marcellus,sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+#Online .online-text h6 {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 1.55em;
+  font-style: normal;
+  font-weight: 300;
+  padding: 16px 0;
+}
+#Online .online-img:hover .overlay {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  transform: translateY(8rem);
+}
+#Online .online-img .overlay {
+  opacity: 0;
+}
+#Online .online-img .overlay a {
+  color: #fff;
+  background: #be9c79;
+  padding: 15px 2rem;
+  text-decoration: none;
+}
+#Online .online-img .overlay a:hover {
+  background: #000;
+  transition: background .3s ease-in-out;
+}
+
+#Sweet {
+  padding: 3rem 0;
+}
+#Sweet .sweet-text h2 {
+  font-family: Marcellus,sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+#Sweet .sweet-text h6 {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 1.55em;
+  font-style: normal;
+  font-weight: 300;
+  padding: 16px 0;
+}
+#Sweet .sweetbox img:hover {
+  filter: sepia(1);
+}
+
+#Brands {
+  margin: 3rem 0;
+}
+#Brands .brands-contain img {
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+#Brands .brands-contain img:hover {
+  transform: translateY(10px);
+  transform: scale(1.5);
+  transition: all .3s ease-in-out;
+}
+
+#Lorem {
+  padding: 5rem 0;
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+  background-attachment: fixed;
+}
+#Lorem a {
+  background: #be9c79;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+#Lorem a:hover {
+  background: #000;
+  transition: background .3s ease-in-out;
+}
+
+#Footer {
+  background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/footer-top-img-1.jpg);
+  color: #fff;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+#Footer .ft-bottom .ft-input input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 4rem 10px 9px;
+}
+#Footer .ft-bottom .ft-input i {
+  background: #fff;
+  color: #000;
+  font-size: 35px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#Footer .ft-bottom .ft-input i:hover {
+  background: #be9c79;
+  transition: background .3s ease-in-out;
+}
+
+#Footer-2 {
+  background: #121212;
+  padding: 50px 42px;
+  color: #fff;
+}
+#Footer-2 span {
+  cursor: pointer;
+}
+#Footer-2 span:hover {
+  color: #be9c79;
+  transition: color .3s ease-in-out;
+}
+#Footer-2 .ft-nav p {
+  font-weight: bold;
+  padding-right: 1rem;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+#Footer-2 .ft-nav p:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#Footer-2 .ft-nav p:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #be9c79;
+  transform-origin: bottom right;
+  transition: transform .5s ease-in-out;
+}
+#Footer-2 i {
+  font-size: 20px;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+#Footer-2 i:hover {
+  color: #be9c79;
+  transition: color .3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  #Header {
+    height: 100px;
+  }
+  #Header img {
+    width: 40%;
+  }
+  #Header span {
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: block;
+  }
+
+  #Slider .slider-content .slick-dots {
+    position: absolute;
+    bottom: -2rem;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  #Slider img {
+    width: 20%;
+  }
+  #Slider .slider1 {
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0rem 1rem 0rem;
+  }
+  #Slider .slider1 .slider1-text h2 {
+    font-size: 41px;
+    line-height: 43px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0px;
+    font-family: Marcellus;
+  }
+  #Slider .slider2 {
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0rem 1rem 0rem;
+  }
+  #Slider .slider2 .slider2-text h2 {
+    font-size: 41px;
+    line-height: 43px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0px;
+    font-family: Marcellus;
+  }
+  #Slider .slider3 {
+    background: url(https://corretto.elated-themes.com/wp-content/uploads/2018/04/home-1-slider-image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0rem 1rem 0rem;
+  }
+  #Slider .slider3 .slider3-text h2 {
+    font-size: 41px;
+    line-height: 43px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0px;
+    font-family: Marcellus;
+  }
+
+  #Offer {
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

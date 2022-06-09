@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header - Start -->
+<section id="Header">
+  <nav class="navbar navbar-expand-lg">
+    <!-- <div class="container"> -->
+      <div class="col-md-2 row">
+        <img class="col-md-10" src="https://corretto.elated-themes.com/wp-content/themes/corretto/assets/img/logo-light.png">
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="#">PAGES</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">BLOG</a>
+        <a href="#">SHOPS</a>
+        <a href="#">ELEMENTS</a>            
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <div class="col-md-10 collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mainNav">
+        <li class="nav-item li">
+            <div class="dropdown">
+              <button class="dropbtn">HOME</button>
+                <div class="dropdown-content">
+                  <a href="#">-Mocha</a>
+                  <a href="#">Robusta</a>
+                  <a href="#">Landing</a>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item li">
+          <div class="dropdown">
+            <button class="dropbtn">PAGES</button>
+              <div class="dropdown-content">
+                <a href="#">ABOUT US</a>
+                <a href="#">ABOUT ME</a>
+                <a href="#">OUR TEAM</a>
+                <a href="#">WHAT WE OFFER</a>
+                <a href="#">OUR MENU</a>
+                <a href="#">LOCATIONS</a>
+                <a href="#">CONTACT US</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-item li">
+          <div class="dropdown">
+            <button class="dropbtn">PORTFOLIO</button>
+              <div class="dropdown-content">
+                  <a href="#">STANDART</a>
+                  <a href="#">GALLERY</a>
+                  <a href="#">MASONRY</a>
+                  <a href="#">LAYOUTS</a>
+                  <a href="#">SINGLE</a>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item li">
+            <div class="dropdown">
+                <button class="dropbtn">BLOG</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item li">
+            <div class="dropdown">
+                <button class="dropbtn">SHOP</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item li">
+            <div class="dropdown">
+                <button class="dropbtn">ELEMENTS</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+        </li>
+        <li class="nav-item">
+          <i class="fas fa-shopping-cart"></i>
+        </li>
+        <li class="nav-item">
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              
+              
+              <button class="openBtn" onclick="openSearch()">
+                  <i class="fas fa-search"></i>
+              </button>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+</section>
+
+<!-- Header - End -->
+
+<!-- Slider - Start -->
+
+<section id="Slider">
+  <!-- <div class="container"> -->
+  <div class="slider-content">
+    <div data-aos="zoom-in" class="slider1">
+      <div data-aos="zoom-in" class="slider1-text text-center">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-slider-img-1.png">
+        <h2>COFEE MASTER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and. </p>
+        <a href="#">SHOP HERE</a>
+      </div>
+    </div>
+    <div data-aos="zoom-in" class="slider2">
+      <div data-aos="zoom-in" class="slider2-text text-center">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-slider-img-1.png">
+        <h2>COFEE FACTORY</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and. </p>
+        <a href="#">SHOP HERE</a>
+      </div>
+    </div>
+    <div data-aos="zoom-in" class="slider3">
+      <div data-aos="zoom-in" class="slider3-text text-center">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-slider-img-1.png">
+        <h2>COFEE HEAVEN</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua atin script and its variants, and. </p>
+        <a href="#">SHOP HERE</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- Slider - End -->
+
+<!-- Offer - Start -->
+
+<section data-aos="zoom-in" id="Offer">
+  <div class="container">
+    <div class="offer-text text-center">
+      <h2> Our Delicious Offer</h2>
+      <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/title-separator.png">
+      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+    </div>
+      <div class="offer-box row">
+        <div class="col-md-3 col-6 text-center">
+          <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h2-custom-icon-5.png">
+          <h4>TYPES OF COFFEE</h4>
+          <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h2-custom-icon-6.png">
+          <h4>BEAN VARIETIES</h4>
+          <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h2-custom-icon-7.png">
+          <h4>COFFEE & PASTRY</h4>
+          <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h2-custom-icon-8.png">
+          <h4>COFFEE TO GO</h4>
+          <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Offer - End -->
+
+<!-- Herald - Start -->
+
+<section id="Herald">
+  <div class="container">
+    <div data-aos="fade-right" class="herald-text text-center">
+      <h2>THE HERALD COFFEE</h2>
+      <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/title-separator.png">
+      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+    </div>
+    <div  data-aos="fade-up"  class="herald-box row justify-content-center">
+      <div class="col-md-3 herald-box1 p-0">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/blog-1-img-1.jpg">
+        <h4>PREP TECHNIQUES</h4>
+        <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+        <a href="#">- READ MORE</a>
+      </div>
+      <div class="col-md-3 herald-box2 p-0">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/blog-1-img-2.jpg">
+        <h4>FRENCH PRESS</h4>
+        <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+        <a href="#">- READ MORE</a>
+      </div>
+      <div class="col-md-3 herald-box3 p-0">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/blog-1-img-3.jpg">
+        <h4>TURKISH IBRIK</h4>
+        <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+        <a href="#">- READ MORE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Herald - End -->
+
+<!-- Coffee - Start -->
+
+<section id="Coffee">
+  <div data-aos="zoom-in" class="coffee-photo text-center">
+    <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/h1-single-img-1-250x226.png">
+  </div>
+</section>
+<!-- Coffee - End -->
+
+<!-- Count - Start -->
+
+<section id="Count">
+  <div class="container">
+    <div class="row">
+      <div class="count-box col-md-3 col-6 mb-3 text-center">
+        <h3>250</h3>
+        <h5>VARIETIES OF COFFEE</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+      </div>
+      <div class="count-box col-md-3 col-6 mb-3 text-center">
+        <h3>123</h3>
+        <h5>HOURS OF TESTING</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+      </div>
+      <div class="count-box col-md-3 col-6 mb-3 text-center">
+        <h3>321</h3>
+        <h5>COFFEE MARKETS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+      </div>
+      <div class="count-box col-md-3 col-6 mb-3 text-center">
+        <h3>220</h3>
+        <h5>COFFEE BRANDS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Count - End -->
+
+<!-- Online - Start -->
+
+<section id="Online">
+  <div class="container">
+    <div data-aos="fade-down" class="online-text text-center">
+      <h2>ONLINE COFFEE SHOP</h2>
+      <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/title-separator.png">
+      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+    </div>
+    <div data-aos="fade-up" class="online-box row">
+      <div class="col-md-3 col-6 text-center">
+        <div class="online-img">
+          <div class="overlay">
+            <a href="#">ADD TO CARD</a>
+          </div>
+          <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/product-img-1-800x800.png">
+        </div>
+        <h4>ETHIOPIA COFFEE</h4>
+        <p>$ 15.00</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <div class="online-img">
+          <div class="overlay">
+            <a href="#">ADD TO CARD</a>
+          </div>
+          <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/product-img-3-800x800.png">
+        </div>
+        <h4>KENYA COFFEE</h4>
+        <p>$ 18.00</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <div class="online-img">
+          <div class="overlay">
+            <a href="#">ADD TO CARD</a>
+          </div>
+          <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/product-img-5-800x800.png">
+        </div>
+        <h4>COLUMBIA COFFEE</h4>
+        <p>$ 21.00</p>
+      </div>
+      <div class="col-md-3 col-6 text-center">
+        <div class="online-img">
+            <div class="overlay">
+              <a href="#">ADD TO CARD</a>
+            </div>
+          <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/product-img-8-800x800.png">
+        </div>
+        <h4>GUATEMALA COFFEE</h4>
+        <p>$ 25.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Online - End -->
+
+<!-- Sweet - Start -->
+
+<section id="Sweet">
+  <div class="container">
+    <div class="sweet-text text-center">
+      <h2>OUR SWEET GALLERY</h2>
+      <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/title-separator.png">
+      <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+    </div>
+    <div class="sweetbox row" data-aos="fade-right">
+    <div class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-1.jpg">
+    </div>
+    <div class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-2.jpg">
+    </div>
+    <div class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-3.jpg">
+    </div>
+    <div class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-7.jpg">
+    </div>
+    </div>
+    <div class="sweetbox row" data-aos="fade-left">
+    <div  data-aos="fade-up" class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-5.jpg">
+    </div>
+    <div  data-aos="fade-up" class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-6.jpg">
+    </div>
+    <div  data-aos="fade-up" class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-4.jpg">
+    </div>
+    <div  data-aos="fade-up" class="col-md-3 col-6 pb-4">
+      <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/port-1-img-8.jpg">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Sweet - End -->
+
+
+<!-- Brands - Start -->
+
+<section id="Brands">
+  <div class="container">
+    <div class="brands-contain row">
+      <div data-aos="fade-up" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-3.png">
+      </div>
+      <div data-aos="fade-down" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-4.png">
+      </div>
+      <div data-aos="fade-up" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-5.png">
+      </div>
+      <div data-aos="fade-down" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-6.png">
+      </div>
+      <div data-aos="fade-up" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-1.png">
+      </div>
+      <div data-aos="fade-down" class="col-md-2 col-6">
+        <img class="img-fluid" src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/clients-img-2.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brands - End -->
+
+<!-- Lorem - Start -->
+
+<section id="Lorem">
+  <div class="container">
+    <div class="lorem-content row">
+      <div class="col-md-8">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+      </div>
+      <div class="col-md-4 text-right">
+        <a href="#">CONTACT US</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Lorem - End -->
+
+
+<!-- Footer - Start -->
+
+<section id="Footer">
+  <div class="container">
+    <div class="footer-contain text-center">
+      <div class="ft-top">
+        <img src="https://corretto.elated-themes.com/wp-content/uploads/2018/04/logo-footer-sidearea.png">
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            
+            nostrud exercitation ullamco laboris.”</p>
+      </div>
+      <div class="ft-mid pt-5 pb-5">
+        <h5>STORES</h5>
+        <p>Dunsmuir Ave, Los Angeles, CA 90036, USA
+
+            Atkins Ave, Brooklyn, NY 11208, USA
+            
+            </p>
+      </div>
+      <div class="ft-bottom">
+        <h5>NEWS AS FRESH AS OUR COFFEE</h5>
+        <div class="ft-input row justify-content-center">
+          <input type="text" placeholder="Your E-mail Adress...">
+          <i class="far fa-envelope"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer - End -->
+
+<!-- Footer-2 - Start -->
+
+<section id="Footer-2">
+  <div class="container row">
+    <div class="col-md-3 text-center">
+      <p>© Copyright <span>Elated Themes</span></p>
+    </div>
+    <div class="ft-nav col-md-6 row justify-content-end">
+      <p>HOME</p>
+      <p>ABOUT</p>
+      <p>SHOP</p>
+      <p>CONTACT</p>
+    </div>
+    <div class="col-md-3 text-center">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-vimeo-v"></i>
+        <i class="fab fa-tumblr"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Footer-2 - End -->
+</body>
+<script src="vendor/js/jquery-3.4.1.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+<script src="vendor/js/slick.js"></script>
+<script src="js/app.js"></script>
+</html>

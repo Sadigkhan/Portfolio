@@ -1,0 +1,608 @@
+@charset "UTF-8";
+#Header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #000;
+  z-index: 10;
+}
+#Header .user-Header {
+  padding: 6px 13px 13px 13px;
+  cursor: pointer;
+}
+#Header i {
+  font-size: 30px;
+}
+#Header .li {
+  font-family: "Rubik", sans-serif;
+  padding: 21px 15px;
+  font-weight: bold;
+}
+#Header .li a:hover {
+  background: #EA723D;
+}
+#Header .dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 19px 8px 0px 8px;
+  font-weight: bold;
+}
+#Header .dropdown a {
+  font-size: 17px;
+}
+#Header .dropdown .line-drop {
+  border-top: 3px solid #EA723D;
+}
+#Header .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 3px 1px 6px 0px #1ea69a;
+  z-index: 1;
+}
+#Header .dropdown .dropdown-content a {
+  color: #b6b6b6;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+#Header .dropdown .dropdown-content a:hover {
+  background: #fafafa;
+  color: #868686;
+}
+#Header .dropdown:hover .dropdown-content {
+  display: block;
+}
+#Header .first-li a {
+  background: #EA723D;
+}
+#Header .login-form {
+  background: #fcfcfc;
+  padding: 20px 16px;
+}
+#Header .login-form h3 {
+  font-size: 20px;
+  color: #868686;
+}
+#Header .login-form p {
+  font-weight: bold;
+  cursor: pointer;
+}
+#Header .login-form p:hover {
+  text-decoration: underline;
+  color: #EA723D;
+}
+#Header .login-form input {
+  margin: 10px 0;
+}
+#Header .login-form .Btn-login {
+  background: #1ea69a;
+  color: #fff;
+  padding: 3px 4.26rem;
+  border: none;
+}
+#Header .login-form .Btn-login:hover {
+  background: #169288;
+}
+#Header .btnHeader {
+  padding-top: 15px;
+}
+#Header .btnHeader input {
+  background: #1ea69a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+#Header .btnHeader input:hover {
+  background: #169288;
+  transition: background .3s ease-in-out;
+}
+
+#Sliderss {
+  z-index: 1;
+  margin-top: -6.5rem;
+}
+#Sliderss .sliderss-all {
+  position: relative;
+}
+#Sliderss .sliderss-all:hover .slick-prev {
+  opacity: 1;
+  transition: all .8s ease-in-out;
+}
+#Sliderss .sliderss-all:hover .slick-next {
+  opacity: 1;
+  transition: all .8s ease-in-out;
+}
+#Sliderss .sliderss-all .slick-prev {
+  position: absolute;
+  left: 3rem;
+  z-index: 1;
+  opacity: 0;
+}
+#Sliderss .sliderss-all .slick-prev:before {
+  content: '→';
+  background: orange;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Sliderss .sliderss-all .slick-next {
+  position: absolute;
+  right: 3rem;
+  z-index: 1;
+  opacity: 0;
+}
+#Sliderss .sliderss-all .slick-next:before {
+  content: '→';
+  background: orange;
+  border-radius: 50px;
+  padding: 10px 10px;
+  font-family: 'slick';
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+#Sliderss .sliderss-all .sliderss1 {
+  background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/06/slide-three-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+}
+#Sliderss .sliderss-all .sliderss1 .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+  margin: 2rem 0;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-text {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-text p {
+  color: #808080;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-icon {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-sale {
+  line-height: 0px;
+  padding: 25px 10px;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-sale p {
+  font-weight: bold;
+}
+#Sliderss .sliderss-all .sliderss1 .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+#Sliderss .sliderss-all .sliderss2 {
+  background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/06/slide-one.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+}
+#Sliderss .sliderss-all .sliderss2 .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+  margin: 2rem 0;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-text {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-text p {
+  color: #808080;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-icon {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-sale {
+  line-height: 0px;
+  padding: 25px 10px;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-sale p {
+  font-weight: bold;
+}
+#Sliderss .sliderss-all .sliderss2 .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+#Sliderss .sliderss-all .sliderss3 {
+  background-image: url(http://modern.realhomes.io/wp-content/uploads/2017/06/slide-two.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+}
+#Sliderss .sliderss-all .sliderss3 .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+  margin: 2rem 0;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-text {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-text p {
+  color: #808080;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-icon {
+  padding: 10px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-sale {
+  line-height: 0px;
+  padding: 25px 10px;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-sale p {
+  font-weight: bold;
+}
+#Sliderss .sliderss-all .sliderss3 .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+
+#News .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#News .dropdown .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+#News .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#News .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#News .dropdown .show {
+  display: block;
+}
+
+#Properties {
+  background: #e5e5e5;
+}
+#Properties .properties-text span {
+  color: #1ea69a;
+  font-weight: bold;
+}
+#Properties .properties-text p {
+  color: #808080;
+}
+#Properties .properties-img .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+}
+#Properties .properties-img .featured .featured-img {
+  position: relative;
+}
+#Properties .properties-img .featured .featured-img:hover .featured-overlay {
+  visibility: visible;
+}
+#Properties .properties-img .featured .featured-img:hover .featured-overlay a {
+  top: 50%;
+  transition: all .5s ease-in-out;
+}
+#Properties .properties-img .featured .featured-img .featured-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1ea69a;
+  visibility: hidden;
+  opacity: 0.7;
+  z-index: 1;
+  text-align: center;
+}
+#Properties .properties-img .featured .featured-img .featured-overlay a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+#Properties .properties-img .featured .featured-img .featured-overlay a:hover {
+  background: #fff;
+  color: #1ea69a;
+  transition: all .3s ease-in-out;
+}
+#Properties .properties-img .featured .featured-text {
+  padding: 10px;
+}
+#Properties .properties-img .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Properties .properties-img .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Properties .properties-img .featured .featured-text p {
+  color: #808080;
+}
+#Properties .properties-img .featured .featured-icon {
+  padding: 10px;
+}
+#Properties .properties-img .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Properties .properties-img .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Properties .properties-img .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Properties .properties-img .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Properties .properties-img .featured .featured-sale {
+  line-height: 0px;
+  padding: 10px;
+}
+#Properties .properties-img .featured .featured-sale p {
+  font-weight: bold;
+}
+#Properties .properties-img .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+
+#Checkout .featured {
+  background: #fff;
+  box-shadow: 2px 6px 5px 0px #b6b6b6;
+}
+#Checkout .featured .featured-img {
+  position: relative;
+}
+#Checkout .featured .featured-img:hover .featured-overlay {
+  visibility: visible;
+}
+#Checkout .featured .featured-img:hover .featured-overlay a {
+  top: 50%;
+  transition: all .5s ease-in-out;
+}
+#Checkout .featured .featured-img .featured-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1ea69a;
+  visibility: hidden;
+  opacity: 0.7;
+  z-index: 1;
+  text-align: center;
+}
+#Checkout .featured .featured-img .featured-overlay a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+#Checkout .featured .featured-img .featured-overlay a:hover {
+  background: #fff;
+  color: #1ea69a;
+  transition: all .3s ease-in-out;
+}
+#Checkout .featured .featured-text {
+  padding: 10px;
+}
+#Checkout .featured .featured-text h3 {
+  font-size: 20px;
+  cursor: pointer;
+}
+#Checkout .featured .featured-text h3:hover {
+  color: #1ea69a;
+  transition: color .3s ease-in-out;
+}
+#Checkout .featured .featured-text p {
+  color: #808080;
+}
+#Checkout .featured .featured-icon {
+  padding: 10px;
+}
+#Checkout .featured .featured-icon .featured-icon1 {
+  padding-right: 10px;
+}
+#Checkout .featured .featured-icon .featured-icon1 p {
+  font-weight: bold;
+  font-size: 14px;
+}
+#Checkout .featured .featured-icon .featured-icon1 i {
+  color: #808080;
+  font-size: 20px;
+}
+#Checkout .featured .featured-icon .featured-icon1 span {
+  color: #000;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#Checkout .featured .featured-sale {
+  line-height: 0px;
+  padding: 10px;
+}
+#Checkout .featured .featured-sale p {
+  font-weight: bold;
+}
+#Checkout .featured .featured-sale h3 {
+  color: #1ea69a;
+}
+
+#Footer {
+  margin-top: 10rem;
+  background: #303030;
+  color: #fff;
+  padding: 3rem 0;
+}
+#Footer .footer-top .ft-left {
+  padding-left: 2.9rem;
+}
+#Footer .footer-top .ft-left p {
+  color: #808080;
+  padding: 10px;
+}
+#Footer .footer-top .ft-right {
+  text-align: end;
+}
+#Footer .footer-top .ft-right i {
+  font-size: 20px;
+  color: #808080;
+  padding-right: 10px;
+  cursor: pointer;
+}
+#Footer .footer-top .ft-right i:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+#Footer .footer-middle {
+  padding: 4rem 0px;
+}
+#Footer .footer-middle .fm-left li {
+  color: #808080;
+  cursor: pointer;
+}
+#Footer .footer-middle .fm-left li:hover {
+  color: #fff;
+  font-weight: bold;
+  transition: color .3s ease-in-out;
+}
+#Footer .footer-middle .fm-center {
+  padding-bottom: 2rem;
+}
+#Footer .footer-middle .fm-center li {
+  padding: 15px 7px;
+  color: #808080;
+}
+#Footer .footer-middle .fm-right .footer-btn {
+  padding: 10px 10.5rem 10px 5px;
+}
+#Footer .footer-middle .fm-right .footer-btn1 {
+  background: #EA723D;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+#Footer .footer-middle .fm-right .footer-btn1:hover {
+  background: #df5f29;
+  transition: background .3s ease-in-out;
+}
+#Footer .footer-bottom .fb-left {
+  color: #808080;
+}
+#Footer .footer-bottom .fb-right {
+  text-align: end;
+}
+#Footer .footer-bottom .fb-right p {
+  color: #808080;
+}
+#Footer .footer-bottom .fb-right span {
+  cursor: pointer;
+}
+#Footer .footer-bottom .fb-right span:hover {
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
